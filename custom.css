@@ -1,0 +1,220 @@
+/**
+ * @name ClearVision Edit
+ * @author Momo Based on ClearVison
+ * @version 0.3.0
+ * @description Still Highly customizable theme for BetterDiscord.
+ * @source https://github.com/ClearVision/ClearVision-v6, 
+ * @website https://clearvision.github.io
+
+/* Credits to Zerthox for making the original theme. */
+
+
+
+/* IMPORT CSS */
+@import url(https://momo1352.github.io/BetterDC/ClearVisionEdit.css);
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
+
+
+
+/* SETTINGS */
+:root {
+
+  /* Fonts */
+  --main-font: 'Karla', sans-serif;
+  --code-font:  'Karla', sans-serif;
+  --font-primary: 'Karla', sans-serif;
+  --font-display: var(--font-primary) !important;
+
+  /* ACCENT COLORS */
+  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #1e63b3; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+
+
+  /* STATUS COLORS */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+  /* GENERAL */
+  --text-normal: rgb(220, 221, 222); /* color of default discord text */
+  --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+  --channels-width: 229px; /* channel list width (240px for Discord default) [default: 220px] */
+  --members-width: 240px; /* member list width [default: 240px] */
+
+  /* APP BACKGROUND */
+  --background-shading: 90%; /* app background shading (0 for complete smoothness) [default: 100%] */
+  --background-overlay: rgba(0, 0, 0, 0.915); /* app background overlay color/gradient [default: rgba(0, 0, 0, 0.6)] */
+  --background-image: url(https://www.linkpicture.com/q/co-neu.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg); /* app background image (link must be HTTPS) [default: url(https://clearvision.github.io/images/sapphire.jpg)]*/
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size [default: cover] */
+  --background-repeat: repeat; /* app background repeat [default: no-repeat] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+  --background-contrast: 100%; /* app background contrast [default: 100%] */
+  --background-saturation: 100%; /* app background saturation [default: 100%] */
+  --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+  --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+  --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+  --background-blur: 0px; /* app background blur [default: 0px] */
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg x)
+  --home-position: center; /* home button icon position [default: center] */
+  --home-size: 42px; /* home button icon size [default: 40px] */ 
+  
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(0, 0, 0, 0.821); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-image: url(https://img8.hotnessrater.com/6691055/corinna-kopf-nude.jpg?w=4000&h=6000); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
+  --backdrop-position: center left; /* modal backdrop position [default: var(--background-position)] */
+  --backdrop-size: 100%; /* modal backdrop size [default: var(--background-size)] */
+  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
+  --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+  --backdrop-brightness: 80%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --backdrop-contrast: 100%; /* modal backdrop contrast [default: var(--background-contrast)] */
+  --backdrop-saturation: 100%; /* modal backdrop saturation [default: var(--background-saturation)] */
+  --backdrop-invert: 0%; /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
+  --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
+  --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
+  --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+  --user-popout-position: center; /* user popout background position [default: var(--background-position)] */
+  --user-popout-size: cover; /* user popout background size [default: var(--background-size)] */
+  --user-popout-repeat: no-repeat; /* user popout background repeat [default: var(--background-repeat)] */
+  --user-popout-attachment: ; /* user popout background attachment [default: var(--background-attachment)] */
+  --user-popout-brightness: var(--background-brightness); /* user popout background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --user-popout-contrast: var(--background-contrast); /* user popout background contrast [default: var(--background-contrast)] */
+  --user-popout-saturation: var(--background-saturation); /* user popout background saturation [default: var(--background-saturation)] */
+  --user-popout-invert: var(--background-invert); /* user popout background invert (0 - 100%) [default: var(--background-invert)] */
+  --user-popout-grayscale: var(--background-grayscale); /* user popout background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+  --user-popout-sepia: var(--background-sepia); /* user popout background sepia (0 - 100%) [default: var(--background-sepia)] */
+  --user-popout-blur: calc(var(--background-blur) + 3px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+  --user-popout-overlay: rgb(246, 246, 246); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
+  --user-modal-repeat: none; /* user modal background repeat [default: var(--background-repeat)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(--background-contrast)] */
+  --user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(--background-saturation)] */
+  --user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(--background-invert)] */
+  --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+  --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
+  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+  --bd-blue-hover: rgba(rgba(7, 6, 58, 0.652)); /* betterdiscord hover color [default: var(--hover-color)] */
+  --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+}
+
+/* Change Popout text below mute, settings Button (Before Static, After Animated */
+.container-YkUktl:before {
+  content:"" !important
+}
+.container-YkUktl:after {
+  content:"Edited by Momo" !important
+}
+
+/* Cahnge Tetx in TopLeft corner */
+.wordmark-2u86JB:before {
+  content:"ClearVision" !important
+}
+.wordmark-2u86JB:after { 
+  content: "Edit" !important
+}
+
+
+/* BD Settings to Top */
+.side-2ur1Qk>:where(.bd-sidebar-header,[class*=-tab],[class*=-tab]+.separator-2wx7h6,:nth-child(-n+9)) {
+  order: -1;
+}
+
+/* Removes Blury Corners of User PopOut */
+.profileColors-3Y0XaR {
+  position: relative;
+}
+
+/* Changes Color or Shade of User PopOut Background */
+.overlayBackground-1KgwVi { background-color: rgba(0, 0, 0, 0.56) }
+
+/* Change Own Stream Prewiew shade and Color */
+.theme-dark .panel-2ZFCRb {
+  background: rgb(0, 0, 0);
+}
+.activityPanel-9icbyU {
+  border-bottom: none;
+}
+
+/* Changes user Roll popout when quickAssingning Rolls thrue --UserPopout-- */
+.container-2kTWmC {
+  background: rgba(0, 0, 0, 0.959);
+  border-radius: 7px;
+  margin: none;
+}
+
+/* Change Screen Sharing, Camera and Activity Button */
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX { 
+  background-color: var(--main-color);
+}
+
+/* Hide Gift Button in Messages */
+.buttons-uaqb-5 > .button-ejjZWC {display: none}
+
+
+/* Change DateViewer */
+#dv-mount {
+  background-color: rgba(0, 0, 0, 0.955);
+  bottom: 0;
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: fixed;
+  width: 240px;
+  z-index: 1;
+  border-radius: 15px;
+}
+#dv-main {
+  --gap: 00px;
+  background-color: transparent;
+  background: transparent;
+  border-top: 1px fixed hsla(0, 0%, 100%, .04);
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: calc(100% - var(--gap) * 1);
+}
+#dv-main .dv-date {
+  font-size: small;
+  opacity: .6;
+}
+.theme-light #dv-mount {
+  background-color: #ffffff00;
+}
+.theme-light #dv-main {
+  border-top: 1px solid #e6e6e6;
+  color: #ffffff00;
+}
+
