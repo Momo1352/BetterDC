@@ -3,22 +3,17 @@
  * @author Momo Based on ClearVison
  * @version 0.3.0
  * @description Still Highly customizable theme for BetterDiscord.
- * @source https://github.com/ClearVision/ClearVision-v6, https://github.com/Momo1352/BetterDC
+ * @source https://github.com/Momo1352/BetterDC
  * @website https://clearvision.github.io
 
 /* Credits to Zerthox for making the original theme. */
-
-
 
 /* IMPORT CSS */
 @import url(https://momo1352.github.io/BetterDC/ClearVisionEdit.css);
 @import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
 
-
-
 /* SETTINGS */
 :root {
-
   /* Fonts */
   --main-font: 'Karla', sans-serif;
   --code-font:  'Karla', sans-serif;
@@ -63,7 +58,7 @@
   --background-blur: 0px; /* app background blur [default: 0px] */
 
   /* HOME BUTTON ICON */
-  --home-icon: url(https://clearvision.github.io/icons/discord.svg x)
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   --home-position: center; /* home button icon position [default: center] */
   --home-size: 42px; /* home button icon size [default: 40px] */ 
   
@@ -74,13 +69,13 @@
   --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
   /* MODAL BACKDROP */
-  --backdrop-overlay: rgba(0, 0, 0, 0.821); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-overlay: rgba(5, 5, 5, 0.782); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
   --backdrop-image: url(https://img8.hotnessrater.com/6691055/corinna-kopf-nude.jpg?w=4000&h=6000); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
   --backdrop-position: center left; /* modal backdrop position [default: var(--background-position)] */
-  --backdrop-size: 100%; /* modal backdrop size [default: var(--background-size)] */
+  --backdrop-size: cover; /* modal backdrop size [default: var(--background-size)] */
   --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
   --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
-  --backdrop-brightness: 80%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --backdrop-brightness: 90%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
   --backdrop-contrast: 100%; /* modal backdrop contrast [default: var(--background-contrast)] */
   --backdrop-saturation: 100%; /* modal backdrop saturation [default: var(--background-saturation)] */
   --backdrop-invert: 0%; /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
@@ -119,24 +114,323 @@
 
   /* THEME BD COLORS */
   --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-  --bd-blue-hover: rgba(rgba(7, 6, 58, 0.652)); /* betterdiscord hover color [default: var(--hover-color)] */
+  --bd-blue-hover: rgba(rgba(31, 27, 255, 0.412)); /* betterdiscord hover color [default: var(--hover-color)] */
   --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
 }
 
-/* Change Popout text below mute, settings Button (Before Static, After Animated */
-.container-YkUktl:before {
-  content:"" !important
-}
-.container-YkUktl:after {
-  content:"Edited by Momo" !important
+/* Wave ar smb who joined server */
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
+  display: none;
 }
 
-/* Cahnge Tetx in TopLeft corner */
+/* Add Friend in Friends Menu */
+.input-3O04eu:focus {
+  box-shadow: none !important;
+}
+.input-3O04eu {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+/* Add Friend Box Shadow */
+.addFriendInputWrapper-kkoSV9:hover {
+  background-color: rgba(0, 0, 0, 0.416);
+  box-shadow: 0 0 2px 2px var(--main-color);
+}
+.addFriendInputWrapper-kkoSV9 {
+  box-shadow: none;
+}
+
+/* More Placed to find Friends in Friend Menu */
+.container-3tKtM_ {
+  background-color: rgba(0, 0, 0, 0.177);
+  height: 58px;
+}
+.container-3tKtM_:hover {
+  background-color: rgba(42, 42, 42, 0.245);
+}
+
+/* Ban reason, Other (Sonstiges) */
+.banReasonOtherClickable-8EKPlQ {
+  background-color: rgba(255,255,255,.07);
+  border: 1px solid;
+  border-color: rgba(255,255,255,.09);
+}
+/* Input field "Other" of ban popout */
+.input-3O04eu {
+  border-radius: 0px !important;
+  background-color: rgba(0, 0, 0, 0.358);
+}
+.characterCount-21v0bl, .maxLength-1Olpq1 {
+  font-size: 13px;
+}
+
+
+/* Posteingang -> For You */
+.row-7jGzPR, .container-1A0qQO {
+  background-color: rgba(0, 0, 0, 0.212);
+}
+/* Posteingang riendRequestsButton */
+.friendRequestsButton-77veU7 {
+  background-color: rgba(47, 46, 46, 0.303);
+}
+
+
+/* Change Text in TopLeft corner */
 .wordmark-2u86JB:before {
-  content:"ClearVision" !important
+  content:"Clean" !important;
 }
 .wordmark-2u86JB:after { 
-  content: "Edit" !important
+  content: "Edit" !important;
+}
+/* Change Popout text below mute Buttons (Before Static, After Animated) */
+.container-YkUktl:before {
+  content:"" !important;
+}
+.container-YkUktl:after {
+  content: "Edited by Momo" !important;
+}
+
+
+/* Popout when confirm any Downloade */
+.focusLock-2tveLW {      
+  background-color: transparent !important;
+}
+
+
+/* ------- File preview in chat ------- */
+
+.nonMediaAttachment-3C_4Pd {
+  background-color: transparent;
+  outline: 1px solid transparent;
+  border-radius: 9px;
+  margin-right: 8px;
+  margin-top: 9px;
+}  
+/* Clickable dowload Space to the right */ 
+.hoverButton-36QWJk {                  
+  background: transparent !important;
+  height: 35px;
+  width: 35px;
+  border: 1px solid transparent;
+  align-items: center;
+}
+/* Name and Size (KB) of File */
+.attachmentInner-1fP7iq {              
+  width: 9px !important;
+  max-width: 328px;
+} 
+/* Dowload Icon */
+.downloadHoverButtonIcon-16xasX {      
+  margin-left: 4px;
+  height: 25px;
+  width: 25px;
+  color: gray;
+}
+.downloadHoverButtonIcon-16xasX:hover {
+  color: var(--main-color); 
+}
+/* Filename */
+.filenameLinkWrapper-3Rc6sk {    
+  height: 17px
+}
+/* Dowload Button in --File preview-- */
+.downloadButton-2PkwZg:hover {
+  color: var(--main-color);
+}
+.codeIcon-Ni8XUA:hover {
+  color: var(--main-color);
+}
+.openFullPreviewSection-31zc2v:hover {
+  color: var(--main-color)
+}
+
+
+/* Delete Button top right (attached img) */
+.hoverButton-36QWJk.removeAttachmentHoverButton-3gHROs {      
+  background: transparent !important;
+  align-items: none !important;
+  height: 20px;
+  width: 20px;
+}
+.hoverButton-36QWJk.removeAttachmentHoverButton-3gHROs:hover {
+  background: rgba(255, 0, 0, 0.53) !important;
+}  
+/* Whole Group (file, img and video popout icons */
+.hoverButtonGroup-2yZIzC {                       
+  background-color: transparent !important;
+}
+
+
+/* popout when clicking Stream, Cam and Activity */
+.modalSize-3WSXDU { /* Stream */
+  background-color: none;
+  border-radius: 9px;
+}
+.modalRoot-1bgrci { /* cam */
+background-color: rgba(0, 0, 0, 0.648) !important;
+}
+.root-CyPAbQ { /* Activity */
+background-color: none !important;
+}
+.modalHeader-3X0A4K { /* Activity */
+  background-color: transparent !important;
+}
+
+
+
+/* ------------- SPOILER TEXT ------------- */
+
+/* Change color of spoiled Text BEFORE*/
+.theme-dark .spoilerText-2G40u0.hidden-2lQZ5q {
+  background-color: rgb(63, 63, 63);
+}  /* AFTER */
+.theme-dark .spoilerText-2G40u0 {
+  background-color: rgba(31, 31, 31, 0.964);
+} /* Hover Color */
+.spoilerText-2G40u0:hover {
+  background-color: rgb(22, 22, 22) !important;
+}
+
+
+/* ------------- BACKGROUND SHADING ------------- */
+
+.chatContent-3KubbW, .resizeHandle-PBRzPC {     /* Background of Chat */
+  background: rgba(0, 0, 0, 0.315);
+}
+.members-3WRCEx {                              /* Background of Member List */
+  width: var(--members-width);
+  background: rgba(0, 0, 0, 0.315);;
+}
+.theme-dark .scroller-3X7KbA {                 /* Background of Server List */
+  background: rgba(0, 0, 0, 0.315);
+}
+.sidebar-1tnWFu {                              /* Background of Channel List */
+  width: var(--channels-width);
+  background: rgba(0, 0, 0, 0.315);
+}
+.wrapper-1gVUIN {                             /* Background when Watching Stream */
+  background: var(--background-shading);
+}
+.nowPlayingColumn-1eCBCN {                    /* Background of active Friends */
+  background: var(--background-shading);
+}
+.peopleColumn-1wMU14 {                        /* Background of online Friends etc. */
+  background: var(--background-shading);
+}
+.container-1-ERn5 {                           /* Background of Server Display */
+  background: rgba(0, 0, 0, 0.315);
+}
+.base-2jDfDU .container-ZMc96U {              /* Background of Toolbar above Chat and Member List */
+  height: 48px;
+  background: rgba(0, 0, 0, 0.315);
+}
+
+
+/* Change background of Pofile Popout from user right click */
+.root-2uUafN {
+  background-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg) !important;
+  background-size: cover !important;
+} .focusLock-2tveLW, .root-g14mjS {       /* Change border Radius */
+  border-radius: 11px;
+}
+
+
+/* Makes all Buttons in right click user profile centered (only need for german Language) */
+.tabBarContainer-2UG0vy {
+  border-bottom: 1px solid var(--profile-body-divider-color);
+  margin: 20px 12 0px;
+  padding: 0px;
+} .tabBar-2StdUa .item-3XjbnG {
+  padding: 0 2px !important;
+  background-color: none;
+  border-radius: 0px;
+  font-size: 14px;
+  background: transparent;
+  left: 1px;
+} 
+
+/* Change The Allignments of Text (Activity, User Infos) */
+.tabBar-2StdUa {      
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  display: flex;
+  gap: 36px;
+}
+/* Change background color of selected Container */
+.tabBar-2StdUa .item-3XjbnG.selected-g-kMVV:after {  
+  background-color: rgba(0, 0, 0, 0);
+  background-image: none;
+}
+/* Change Hight of selected bottom --Main-Color-- Line */
+.tabBarItem-3VvT2z {     
+  height: 30px; 
+}
+
+/* Change Pofile Popout from right click on user **note** background */
+.note-3TX9O7 {
+  background-color: transparent !important;
+  border-radius: 1px;
+  margin: 2px;
+  padding: 2px;
+  border: none;
+} 
+.note-3TX9O7 textarea {    /* Change Text, Text Background of Note */
+  border-radius: 3px;
+  padding: 9px;
+  font-size: 15px;
+  line-height: 13px;
+  background: transparent;
+}
+
+/* Invite Button on bottom left when watching stream */
+.buttonColor-28DXIe {
+  background-color: rgba(0, 0, 0, 0.397);}
+.buttonColor-28DXIe:hover {
+  background-color: rgba(0, 0, 0, 0.596);}
+
+/* Changes Users Background in Streaming view */
+ .background-L8lGH6[style*="background-color:"] {
+  background-color:none !important;}
+/* Display Box of Names */
+ .overlayTitle-2efoIF {
+  background: rgba(0, 0, 0, 0.753);
+}
+
+/* Right click on user Menu */
+.menu-1QACrS {
+  background-color: rgba(0, 0, 0, 0.926);
+  border-radius: 10px; 
+}
+
+
+/* Displayed File Box in chat */
+.theme-dark .attachment-1PZZB2 {
+  height: 50px;
+}
+
+
+/* Changes Background while watching Stream */
+.callContainer-HtHELf {
+  background-color: transparent !important;
+}
+
+/* Change Own Stream Prewiew shade and Color */
+.theme-dark .panel-2ZFCRb {
+  background: transparent;
+}
+.activityPanel-9icbyU {
+  border-bottom: none;
+}
+
+/* Change Screen Sharing, Camera and Activity Button */
+.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX { 
+  background-color: var(--main-color);
+}
+/*Change Hover Color of This */
+.button-1EGGcP.buttonColor-3bP3fX:hover, 
+.button-1EGGcP .buttonColor-3bP3fX:hover {
+  background-color: var(--hover-color);
 }
 
 
@@ -145,21 +439,14 @@
   order: -1;
 }
 
+
 /* Removes Blury Corners of User PopOut */
 .profileColors-3Y0XaR {
   position: relative;
 }
 
-/* Changes Color or Shade of User PopOut Background */
+/* Changes Color or Shade of User Popout Background */
 .overlayBackground-1KgwVi { background-color: rgba(0, 0, 0, 0.56) }
-
-/* Change Own Stream Prewiew shade and Color */
-.theme-dark .panel-2ZFCRb {
-  background: rgb(0, 0, 0);
-}
-.activityPanel-9icbyU {
-  border-bottom: none;
-}
 
 /* Changes user Roll popout when quickAssingning Rolls thrue --UserPopout-- */
 .container-2kTWmC {
@@ -168,18 +455,44 @@
   margin: none;
 }
 
-/* Change Screen Sharing, Camera and Activity Button */
-.button-1EGGcP.buttonColor-3bP3fX, .button-1EGGcP .buttonColor-3bP3fX { 
-  background-color: var(--main-color);
+
+
+/* Shows Time of edited Messages */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+  content: " (" attr(aria-label) ")";
+  color: var(--text-muted);
+  font-size: 0.725rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: lowercase;
+}
+.edited-1v5nT8:not(.message-translate-indicator) {
+display: none;
+}
+
+
+/* Copy Button  in Invitation menu Alligning */
+.copyButton-2k4drX {
+  margin-left: 9px;
+  width: 90px;
+}
+/*invatation botton of users, depends on Language */
+.inviteRowButton-3hcOhY {  
+  width: 92px;
+}
+/* Link Box */
+.input-3O04eu {
+  border-radius: 8px;
 }
 
 /* Hide Gift Button in Messages */
 .buttons-uaqb-5 > .button-ejjZWC {display: none}
 
 
+
 /* Change DateViewer */
 #dv-mount {
-  background-color: rgba(0, 0, 0, 0.955);
+  background-color: rgba(0, 0, 0, 0.463);
   bottom: 0;
   box-sizing: border-box;
   display: flex;
@@ -188,11 +501,11 @@
   position: fixed;
   width: 240px;
   z-index: 1;
-  border-radius: 15px;
+  border-radius: 0px;
 }
 #dv-main {
-  --gap: 00px;
-  background-color: transparent;
+  --gap: 0px;
+  background-color: transparent !important;
   background: transparent;
   border-top: 1px fixed hsla(0, 0%, 100%, .04);
   box-sizing: border-box;
@@ -217,4 +530,3 @@
   border-top: 1px solid #e6e6e6;
   color: #ffffff00;
 }
-
