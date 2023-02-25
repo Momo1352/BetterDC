@@ -116,14 +116,46 @@
   --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
   --bd-blue-hover: rgba(rgba(31, 27, 255, 0.412)); /* betterdiscord hover color [default: var(--hover-color)] */
   --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+} 
+
+
+/* ----------- Settings ----------- */
+
+/* Saving Changes */
+.theme-dark .elevationHigh-28Pty4 {
+  width: fit-content;
+}
+/* Cancel button on saving Settings */
+.theme-dark .lookLink-13iF2K.colorPrimary-2-Lusz {
+  margin-left: 20px;
+  background-color: rgba(255, 6, 6, 0.374)
+}
+.theme-dark .lookLink-13iF2K.colorPrimary-2-Lusz:hover {
+background-color: rgba(255, 0, 0, 0.322);
+}
+/* Saving Button on save changes Popout */
+.lookFilled-1H2Jvj.colorRed-2VFhM4{
+  margin-left: 10px ;
 }
 
-/* Wave ar smb who joined server */
-.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
-  display: none;
+
+/* ----------- Friend Menu ----------- */
+
+/* "Add Friend" Button */
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:disabled, .lookFilled-1H2Jvj.colorBrand-2M3O3N[aria-disabled=true] {
+  background-color: var(--main-color);
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:disabled, .lookFilled-1H2Jvj.colorBrand-2M3O3N[aria-disabled=true]:hover {
+  background-color: var(--hover-color);
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N {
+  background-color: var(--main-color);
+}
+.lookFilled-1H2Jvj.colorBrand-2M3O3N:hover {
+  background-color: var(--hover-color);
 }
 
-/* Add Friend in Friends Menu */
+/* "Add Friend" in Friends Menu */
 .input-3O04eu:focus {
   box-shadow: none !important;
 }
@@ -131,16 +163,17 @@
   box-shadow: none !important;
   background-color: transparent !important;
 }
-/* Add Friend Box Shadow */
+/* "Add Friend" Box Shadow */
+.addFriendInputWrapper-kkoSV9 {
+  background-color: rgba(0, 0, 0, 0.177);
+  box-shadow: 0 0 3px 1px var(--main-color);
+}
 .addFriendInputWrapper-kkoSV9:hover {
-  background-color: rgba(0, 0, 0, 0.416);
+  background-color: rgba(42, 42, 42, 0.245);
   box-shadow: 0 0 2px 2px var(--main-color);
 }
-.addFriendInputWrapper-kkoSV9 {
-  box-shadow: none;
-}
 
-/* More Placed to find Friends in Friend Menu */
+/* "More Places to find" Friends in Friend Menu */
 .container-3tKtM_ {
   background-color: rgba(0, 0, 0, 0.177);
   height: 58px;
@@ -148,6 +181,8 @@
 .container-3tKtM_:hover {
   background-color: rgba(42, 42, 42, 0.245);
 }
+
+
 
 /* Ban reason, Other (Sonstiges) */
 .banReasonOtherClickable-8EKPlQ {
@@ -294,33 +329,31 @@ background-color: none !important;
 
 /* ------------- BACKGROUND SHADING ------------- */
 
-.chatContent-3KubbW, .resizeHandle-PBRzPC {     /* Background of Chat */
+.chatContent-3KubbW, .resizeHandle-PBRzPC {     /* Chat */
   background: rgba(0, 0, 0, 0.315);
 }
-.members-3WRCEx {                              /* Background of Member List */
-  width: var(--members-width);
+.members-3WRCEx {                              /* Member List */
   background: rgba(0, 0, 0, 0.315);;
 }
-.theme-dark .scroller-3X7KbA {                 /* Background of Server List */
+.theme-dark .scroller-3X7KbA {                 /* Server List */
   background: rgba(0, 0, 0, 0.315);
 }
-.sidebar-1tnWFu {                              /* Background of Channel List */
-  width: var(--channels-width);
+.sidebar-1tnWFu {                              /*  Channel List */
   background: rgba(0, 0, 0, 0.315);
 }
-.wrapper-1gVUIN {                             /* Background when Watching Stream */
+.wrapper-1gVUIN {                             /* Watching Stream */
   background: var(--background-shading);
 }
-.nowPlayingColumn-1eCBCN {                    /* Background of active Friends */
+.nowPlayingColumn-1eCBCN {                    /* Active Friends */
   background: var(--background-shading);
 }
-.peopleColumn-1wMU14 {                        /* Background of online Friends etc. */
+.peopleColumn-1wMU14 {                        /* online Friends etc. (Friend Menu) */
   background: var(--background-shading);
 }
-.container-1-ERn5 {                           /* Background of Server Display */
+.container-1-ERn5 {                           /* Server Display */
   background: rgba(0, 0, 0, 0.315);
 }
-.base-2jDfDU .container-ZMc96U {              /* Background of Toolbar above Chat and Member List */
+.base-2jDfDU .container-ZMc96U {              /* Toolbar above Chat and Member List */
   height: 48px;
   background: rgba(0, 0, 0, 0.315);
 }
@@ -485,12 +518,9 @@ display: none;
   border-radius: 8px;
 }
 
-/* Hide Gift Button in Messages */
-.buttons-uaqb-5 > .button-ejjZWC {display: none}
 
 
-
-/* Change DateViewer */
+/* ----------- DateViewer ----------- */
 #dv-mount {
   background-color: rgba(0, 0, 0, 0.463);
   bottom: 0;
@@ -529,4 +559,15 @@ display: none;
 .theme-light #dv-main {
   border-top: 1px solid #e6e6e6;
   color: #ffffff00;
+}
+
+
+/* Wave at smb who joined server */
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
+  display: none;
+}
+
+/* Hide Gift Button in Messages */
+.buttons-uaqb-5 > .button-ejjZWC {
+  display: none
 }
