@@ -1,0 +1,1343 @@
+/**
+ * @name New Shaded Free
+ * @author Momo
+ * @version 0.0.1
+ * @description Still Highly customizable theme for BetterDiscord.
+ * @source https://github.com/Momo1352/BetterDC
+ * @website https://clearvision.github.io
+
+/* Credits to ClearVision for making the original theme. */
+
+/* setTimeout(() => { debugger }, 3000) /* 
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css); 
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css);
+@import url(//dablulite.github.io/BetterFloatingEditor/import.css);
+
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oxanium:wght@400&display=swap);
+
+/* SETTINGS */
+:root {
+ /* Fonts */
+  --font-primary: 'Karla' ;
+  --font-headline: 'Karla' ;
+  --font-display: 'Karla' ;
+
+  /* Clear vision font */
+  --main-font: 'Karla', sans-serif;
+  --code-font:  'Oxanium' ;
+  
+/* ACCENT COLORS */
+  --main-color: #2780e6; /* main accent color (hex, rgb or hsl) [default: #2780e6] */
+  --hover-color: #185294; /* hover accent color (hex, rgb or hsl) [default: #1e63b3] */
+  --success-color: #43b581; /* success accent color (hex, rgb or hsl) [default: #43b581] */
+  --danger-color: #982929; /* danger accent color (hex, rgb or hsl) [default: #982929] */
+  --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
+
+  /* Custom */
+  --main-background: rgba(0, 0, 0, 0.648); /* All Collums backgrounds rgba(0, 0, 0, 0.695);*/
+  --background-overlay: rgba(23, 25, 46, 0.821); /* rgba(31, 33, 54, 0.821); */
+  --popout-color: rgba(0, 0, 0, 0.959); /* Every Popouts Background rgba(0, 0, 0, 0.959);*/
+
+  --main-border: 1px solid rgba(128, 128, 128, 0.153); /* Main Border */
+  --gray-hover: rgba(35, 34, 45, 0.05);  
+  --main-box:  0 0 0px 0px var(--main-color);
+  --border-radius: 11px;
+  --margin: 10px;
+
+  /* APP BACKGROUND */
+  --background-image: url(); /* https://probot.media/oKJSMpatJn.jpg */
+  --background-shading: 0%; /* app background shading (0 for complete smoothness) [default: 100%] */
+  --background-position: center; /* app background position [default: center] */
+  --background-size: cover; /* app background size [default: cover] */
+  --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
+  --background-attachment: fixed; /* app background attachment [default: fixed] */
+  --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
+  --background-contrast: 100%; /* app background contrast [default: 100%] */
+  --background-saturation: 100%; /* app background saturation [default: 100%] */
+  --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
+  --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
+  --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
+  --background-blur: 0px; /* app background blur [default: 0px] */
+
+  /* STATUS COLORS */
+  --online-color: #43b581; /* online status color (hex, rgb or hsl) [default: #43b581] */
+  --idle-color: #faa61a; /* idle status color (hex, rgb or hsl) [default: #faa61a] */
+  --dnd-color: #982929; /* dnd status color (hex, rgb or hsl) [default: #982929] */
+  --streaming-color: #593695; /* streaming status color (hex, rgb or hsl) [default: #593695] */
+  --offline-color: #808080; /* offline/invisible status color (hex, rgb or hsl) [default: #808080] */
+
+  /* GENERAL */
+  --text-normal: rgb(220, 221, 222); /* color of default discord text */
+  --text-muted: rgb(114, 118, 125); /* color of default discord muted text (e.g.text found in input fields before typing).*/
+  --channels-width: 250px; /* channel list width (240px for Discord default) [default: 220px] */
+  --members-width: 240px; /* member list width [default: 240px] */
+
+  /* HOME BUTTON ICON */
+  --home-icon: url(https://clearvision.github.io/icons/discord.svg);
+  --home-position: center; /* home button icon position [default: center] */
+  --home-size: 42px; /* home button icon size [default: 40px] */ 
+}
+
+
+/* Makes Cam, Activity, Soundboard button only appear when hover */
+/* Cam, Activity, Soundboard button */
+.actionButtons-2vEOUh > .button-1EGGcP,
+.actionButtons-2vEOUh > div:has(> .button-1EGGcP) {
+  display: none !important;
+  transform: translateY(-86px);
+}
+.panels-3wFtMD:hover .actionButtons-2vEOUh > .button-1EGGcP,
+.panels-3wFtMD:hover .actionButtons-2vEOUh > div:has(> .button-1EGGcP) {
+  animation: opacity 0.55s ease-in;
+  display: flex !important;
+} @keyframes opacity {
+  0% {opacity: 0;}
+  100%  {opacity: 1;}
+}
+/* Voice Connected and DC button */
+.container-1zzFcN {
+  transition: .25s  ease-in-out;
+  transform: translateY(-3px) !important;
+  height: 2em;
+} #app-mount section.panels-3wFtMD:hover .container-1zzFcN {
+  transition: .25s  ease-in-out;
+  transform: translateY(42px) !important;
+  height: 5em;
+} /* Full Panel */
+.panels-3wFtMD {
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.167);
+  box-shadow: inset 0 0 0 2px var(--main-color);
+} .panels-3wFtMD:hover {
+  box-shadow: inset 0 0 0 2px var(--main-color);
+} /* Avatar and Mute buttons, settings */
+.container-YkUktl {
+  margin-bottom: 3px !important;
+}
+/* Change Screen Sharing, Camera and Activity Button */
+.button-1EGGcP .buttonColor-3bP3fX:hover {
+  background-color: var(--hover-color);
+  transition: all 0.1s ease 0.1s !important;
+}
+/* Activity button */
+.button-1EGGcP:has([d^="M4.92871 13.4149L10.5857"]) {
+  display: grid;
+}
+/* Fixes disbled soundboard button */
+.disabledButtonWrapper-1m0hYZ:has([d="M20 4.00299H7V20.003H20C21.104 20.003 22 19.107 22 18.003V6.00299C22 4.89799 21.104 4.00299 20 4.00299ZM19 14.003C19 15.107 18.104 16.003 17 16.003C15.896 16.003 15 15.107 15 14.003C15 12.899 15.896 12.003 17 12.003V9.38999L13 10.724C13 10.724 13 14.984 13 15.003C13 16.107 12.104 17.003 11 17.003C9.896 17.003 9 16.107 9 15.003C9 13.899 9.896 13.003 11 13.003V10.003C11 9.57199 11.275 9.19099 11.684 9.05399L17.684 7.05399C17.989 6.95199 18.323 7.00299 18.585 7.19199C18.846 7.37899 19 7.68199 19 8.00299C19 8.00299 19 13.983 19 14.003Z"]) {
+  padding: unset;
+  border-radius: 3px;
+  transform: translateY(0) !important;
+} /* Soundboard Icon */
+.buttonIcon-2Zsrs2:has([d^="M20 4.00299H7V20.003H20C21.104 20.003 22 19.107 22 18.003V6.00299C22 4.89799 21.104 4.00299 20 4.00299ZM19 14.003C19 15.107 18.104 16.003 17 16.003C15.896 16.003 15 15.107 15 14.003C15 12.899 15.896 12.003 17 12.003V9.38999L13 10.724C13 10.724 13 14.984 13 15.003C13 16.107 12.104 17.003 11 17.003C9.896 17.003 9 16.107 9 15.003C9 13.899 9.896 13.003 11 13.003V10.003C11 9.57199 11.275 9.19099 11.684 9.05399L17.684 7.05399C17.989 6.95199 18.323 7.00299 18.585 7.19199C18.846 7.37899 19 7.68199 19 8.00299C19 8.00299 19 13.983 19 14.003Z"])
+{position: relative;
+  top: 1px;}
+.buttonIcon-2Zsrs2:has([d^="M20 4.00299H7V20.003H20C21.104 20.003 22 19.107 22 18.003V6.00299C22 4.89799 21.104 4.00299 20 4.00299ZM19 14.003C19 15.107 18.104 16.003 17 16.003C15.896 16.003 15 15.107 15 14.003C15 12.899 15.896 12.003 17 12.003V9.38999L13 10.724C13 10.724 13 14.984 13 15.003C13 16.107 12.104 17.003 11 17.003C9.896 17.003 9 16.107 9 15.003C9 13.899 9.896 13.003 11 13.003V10.003C11 9.57199 11.275 9.19099 11.684 9.05399L17.684 7.05399C17.989 6.95199 18.323 7.00299 18.585 7.19199C18.846 7.37899 19 7.68199 19 8.00299C19 8.00299 19 13.983 19 14.003Z"]) 
+{width: 23px;
+height: 23px;}
+/* Activity Panel Stream */
+.panel-2ZFCRb.activityPanel-9icbyU {
+  transform: translatey(5px);
+} .gameIcon-2BIUJ3 {
+  width: 25px;
+  height: 25px;
+}
+
+
+/* Help Icon */
+.iconWrapper-2awDjA[aria-label="Hilfe"] {
+  display: none;
+}
+
+/* Tool Buttons below Streams */
+.actionBarButton-13NNTn {
+  margin-right: 10px;
+} .rightTrayIcon-1m3hnG {
+  margin-left: 10px;
+} .leftDivider-1HpX9I {
+  margin-right: 10px;
+} /* Controle Bar below Stream */
+.bottomControls-31YuPK {
+  margin-bottom: -8px;
+}
+ 
+/*  Search in Friends tab */
+.container-2oNtJn:hover {
+  box-shadow: 0 0 3px 2px var(--main-color);
+} 
+
+/* Soundboard */
+.picker-20lcBA {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+} .header-3YNgrp {
+  border-bottom: 2px solid var(--main-color);
+  margin-bottom: 7px;
+} .scroller-2MALzE.none-1rXy4P.scrollerBase-1Pkza4 {
+  top: 4px;
+} .inner-1NoIT5.thin-RnSY0a.scrollerBase-1Pkza4 {
+  background-color: var(--popout-color);
+} .soundButtonInteractive-3ujugW {
+  background-color: unset;
+  border: var(--main-border);
+  width: 149px;
+} 
+
+/* Game night Button in Streams */
+.gameNightButton-3N8p1F {
+  display: none;
+}
+/* Makes invissibleTyping button invisible but clickable */
+.invisible-typing-button {
+  opacity: 0;
+}
+
+/* Own user Prifole bottom left */
+.menu-2TXYjN.flexible-3B4jwn.menu-2-eHMB {
+  border: unset;
+}
+
+/* MessagesBar */ 
+.newMessagesBar-1hF-9G {
+  box-shadow: none;
+} .newMessagesBar-1hF-9G::before {
+background-color: transparent;
+width: auto;
+} .newMessagesBar-1hF-9G button {
+  border-radius: 5px;
+  background-color: var(--main-color);
+  margin: 5px;
+  margin-top: 10px;
+} .barButtonMain-2GIx4o.barButtonBase-Sk2mdB {
+  max-width: fit-content;
+} .barButtonAlt-TQoCdZ-barButtonBase-Sk2mdB {
+  max-width: fit-content;
+} /* Jump to present Chats */
+.jumpToPresentBar-1cEnH0 {
+  background-color:  black;
+  border-radius: 6px;
+  bottom: 3px;
+}
+
+
+
+/* Add Channel Button in Channel List */
+.addButtonIcon-3rJeaD {  
+  display: none;
+}
+
+/* User Popout */
+.userPopoutOuter-1OHwPL.userProfileOuterUnthemed-11rPfA .userPopoutInner-nv9Y92 {
+  background-color: currentColor;
+}
+/* Message input in User Popout */
+.input-3O04eu {
+  width: 98%;
+}
+
+
+
+/* Date of Message divider */
+.content-3spvdd::after, .content-3spvdd::before {
+  border-radius: 5px;
+}
+
+/* ----------- Settings ----------- */
+
+/* Saving Changes */
+.theme-dark .elevationHigh-28Pty4 {
+  width: fit-content;
+} /* Cancel button on saving Settings */
+.theme-dark .lookLink-13iF2K.colorPrimary-2-Lusz {
+  margin-left: 20px;
+  background-color: transparent;
+} .theme-dark .lookLink-13iF2K.colorPrimary-2-Lusz:hover {
+  background-color: rgba(65, 65, 65, 0.308);
+} /* Saving Button on save changes Popout */
+.lookFilled-1H2Jvj.colorRed-2VFhM4{
+  margin-left: 10px ;
+} .list-13gwFt {
+  background-color: var(--popout-color);
+} /* Settings Hover */
+.side-1lrxIh .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl), .topPill-2vcLsa .themed-qqoYp3.item-2GWPIy:hover:not(.disabled-2G98Nl) {
+  background-color: var(--hover-color);
+  max-height: 37px;
+} .standardSidebarView-E9Pc3j .sidebar-nqHbhN .side-1lrxIh .item-2GWPIy {
+  max-height: 37px;
+}
+
+.contentRegion-3HkfJJ .contentRegionScroller-2_GT_N, .contentRegion-3HkfJJ .scroller-3_YDR2 {
+  width: 70%;
+  background-color: var(--main-background) !important;
+}
+
+/* Sever Settings -- Audit Log */
+.customScroller-m1-jZn.scroller-IZ5d96.auto-2TJ1RH.scrollerBase-1Pkza4 {
+  background-color: var(--main-background);
+  height: calc(100% - var(--margin) - var(--margin));
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  width: fit-content;
+}  /* App-Directory */
+.theme-dark .directoryModal-YJsOMv {
+  background-color: var(--popout-color);
+}
+/* Main Section of Settings */
+.contentRegionScroller-2_GT_N {                                        
+  background-color: var(--main-background) !important;
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  min-width: 60%;
+  height: calc(100% - var(--margin) - var(--margin));
+  width: fit-content;
+}  /* Left Settings Sidebar */
+.standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebar-nqHbhN {   
+  height: fit-content;
+  width: 900px;
+}  /* Remove Fade of left Scroller in Settings */
+.sidebarRegion-1VBisG .sidebarRegionScroller-FXiQOh {
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+  max-width: 320px;
+  top: var(--margin);
+  height: calc(95% - var(--margin) - var(--margin));
+  margin-right: unset;
+  -webkit-mask-image: none;
+} .standardSidebarView-E9Pc3j .sidebarRegion-1VBisG .sidebar-nqHbhN {
+  padding: 0px 10px 0px 10px;
+} .side-1lrxIh {    /* settings left */
+  padding: 20px 15px;
+}
+
+/* ----------- Friend Menu ----------- */
+
+/* Online, all, pending, blocked users, add friend */
+.item-3mHhwr.item-2GWPIy.selected-1sf9UK.themed-qqoYp3 {
+  background-color: var(--main-color);
+} /* Add Friend Button */
+.item-3mHhwr.addFriend-emTWY1.item-2GWPIy.themed-qqoYp3:hover[aria-label="Freund hinzufügen"] {
+  background-color: rgba(82, 162, 82, 0.533);
+} 
+/* Username Input in AddFriend */
+.input-1bmui3 {
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+} .input-1bmui3:focus {
+  border: none;
+  box-shadow: none;
+  font-size: 16.3px;
+}
+/* "Add Friend" Box Shadow */
+.addFriendInputWrapper-kkoSV9 {
+  background-color: rgba(0, 0, 0, 0.177);
+  box-shadow: 0 0 3px 1px var(--main-color);
+} .addFriendInputWrapper-kkoSV9:hover {
+  background-color: var(--gray-hover);
+  box-shadow: 0 0 3px 2px var(--main-color);
+}
+
+/* "More Places to find" Friends in Friend Menu */
+.container-3tKtM_ {
+  background-color: rgba(0, 0, 0, 0.177);
+  height: fit-content;
+} .container-3tKtM_:hover {
+  background-color: var(--gray-hover);
+}
+
+/* Ban reason, Other (Sonstiges) */
+.banReasonOtherClickable-8EKPlQ {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+} .theme-dark .modal-3Hrb0S, .theme-dark .root-1CAIjD {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  border-radius: 10px;
+}
+.container-qBnZJg.root-1CAIjD.rootWithShadow-2hdL2J {
+  border: none;
+}
+/* Input field "Other" of ban popout */
+.maxLength-1Olpq1 {
+  font-size: 13px;
+} .input-3O04eu:focus {
+box-shadow: none;
+}
+
+
+
+
+/* GIFs Sticker and Emojis Popout */
+.contentWrapper-3vHNP2 {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  border-radius: 10px;
+}
+
+/* Popout when confirm any Downloade */
+.focusLock-2tveLW {      
+  background-color: transparent !important;
+}
+/* Name and Size (KB) of File */
+.attachmentInner-1fP7iq {              
+  max-width: 70%;
+} 
+/* Filename */
+.filenameLinkWrapper-3Rc6sk {    
+  height: 17px
+}
+
+
+/* ----- Popout of Stream, Cam and Activity ----- */
+.modalSize-3WSXDU { 
+  background-color: transparent;
+}
+/* Activity Header */
+.modalHeader-3X0A4K { 
+  background-color: transparent !important;
+}
+/* Survay activity */
+.footer-yVEuwO {
+  display: none;
+}
+/* Remove Premium Banner in Profiles */
+.bannerPremium-86naOf, .popoutBannerPremium-2RvDNZ {
+  display: none;
+}
+
+/* Makes emojis blur instead of black and white */
+.emojiItemDisabled-3VVnwp {
+  filter: blur(2px) !important;
+}
+
+
+/* Settings Header */ 
+.header-2F5_LB {
+  color: var(--main-color);
+} .bd-sidebar-header h2 {
+  color: var(--main-color);
+}
+
+/* Searchbars */
+.inner-2pOSmK:hover {
+  background-color: var(--gray-hover);
+} .container-2oNtJn:hover {
+  box-shadow: unset;
+  top: 10px;
+  z-index: 99px;
+} /* GIFs */
+.searchBar-3aIzc-.container-2oNtJn.medium-2NClDM {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+} .container-2oNtJn:focus-within {
+  box-shadow: 0 0 2px 2px var(--main-color);
+  transition: all .15s ease-in-out;
+} .header-2TLOnc {
+  padding: 4px 16px 1px;
+}
+
+/* Search for Plugins, Themes (BD) */
+.bd-addon-controls .bd-search {
+  font-size: 16px !important;
+} .bd-search-wrapper {
+  border: var(--main-border);
+}.bd-search-wrapper:hover {
+  border: 1px solid var(--hover-color);
+  background-color: rgba(128, 128, 128, 0.203) !important;
+}
+.bd-select-wrapper label {               /* Sort and Order Text in BD Plugin Settings */
+  font-size: 14px;
+  margin: 0px;
+}
+.bd-addon-list .bd-addon-card {          /* Plugin Card in BD Settings */
+  border-radius: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.123);
+  margin-bottom: 10px;
+} .bd-select .bd-select-option {          /* Sort and Order Popout in BD Plugin Settings */
+  background-color: rgba(0, 0, 0, 0.851);
+} .bd-select .bd-select-option:hover {
+  background-color: rgb(35, 32, 32) !important;
+  border-radius: 4px;
+}
+
+/* ------------- SPOILER TEXT ------------- */
+
+/* Change color of spoiled Text BEFORE*/
+.theme-dark .spoilerText-2G40u0.hidden-2lQZ5q {
+  background-color: rgb(63, 63, 63);
+}  .theme-dark .spoilerText-2G40u0 {                /* AFTER */
+  background-color: rgba(31, 31, 31, 0.964);
+} .spoilerText-2G40u0:hover {                       /* Hover Color */
+  background-color: rgb(22, 22, 22) !important;
+}
+
+
+
+/* Makes all Buttons in right click user profile visible (only need for german Language) */
+.tabBar-2hXqzU .item-2GWPIy {
+  font-size: 14px;
+  margin: unset;
+  background: transparent;
+  padding: unset;
+} .tabBar-2hXqzU .item-2GWPIy:before {
+  background: transparent;
+} .tabBar-2hXqzU .item-2GWPIy.selected-1sf9UK:after {
+  background-color: transparent;
+  transition: unset;
+} .tabBarContainer-sCZC4w {
+  padding: unset;
+} .tabBar-2hXqzU {
+  gap: 40px;
+}
+
+/* Notes TextArea in Profiles */ 
+.textarea-_59yqs {
+  width: 98%;
+}
+
+/* Right Click Menus */
+ .menu-2TXYjN {     /* Since new update new added background */
+  border-radius: 12px; 
+  background-color: var(--popout-color);
+  border: var(--main-border);
+}
+
+/* Changes Users Background in Streaming view */
+ .background-L8lGH6[style*="background-color:"] {
+  background-color: none !important;
+} /* Display Box of Names */
+ .overlayTitle-2efoIF {
+  background: rgba(0, 0, 0, 0.753);
+}
+
+
+
+
+/* Posteingang */
+.messagesPopoutWrap-3zryHW, .recentMentionsPopout-2bI1ZN {
+  border-radius: 10px; 
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  max-height: 900px !important;
+} /* Ungelesen, Erwähnungen, Für dich */
+.scroller-MIi2ab, .scroller-145h9c, .container-1A0qQO {
+  max-height: 800px;
+  background-color: var(--popout-color);;
+} /* Header of inbox */
+.header-145e10.expanded-2H1xJ- {  
+  border-bottom: 2px solid var(--main-color);
+}
+
+
+/* Posteingang riendRequestsButton */
+.friendRequestsButton-77veU7 {
+  background-color: rgba(47, 46, 46, 0.303);
+}
+
+/* Threads Popout */
+.container-18GwIk {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+} /* Threads bottom */
+.list-3YHPPb:has([d="M5.43309 21C5.35842 21 5.30189 20.9325 5.31494 20.859L5.99991 17H2.14274C2.06819 17 2.01168 16.9327 2.02453 16.8593L2.33253 15.0993C2.34258 15.0419 2.39244 15 2.45074 15H6.34991L7.40991 9H3.55274C3.47819 9 3.42168 8.93274 3.43453 8.85931L3.74253 7.09931C3.75258 7.04189 3.80244 7 3.86074 7H7.75991L8.45234 3.09903C8.46251 3.04174 8.51231 3 8.57049 3H10.3267C10.4014 3 10.4579 3.06746 10.4449 3.14097L9.75991 7H15.7599L16.4523 3.09903C16.4625 3.04174 16.5123 3 16.5705 3H18.3267C18.4014 3 18.4579 3.06746 18.4449 3.14097L17.7599 7H21.6171C21.6916 7 21.7481 7.06725 21.7353 7.14069L21.4273 8.90069C21.4172 8.95811 21.3674 9 21.3091 9H17.4099L17.0495 11.04H15.05L15.4104 9H9.41035L8.35035 15H10.5599V17H7.99991L7.30749 20.901C7.29732 20.9583 7.24752 21 7.18934 21H5.43309Z"]) {
+  border-top: 2px solid var(--main-color);
+} /* Attached messanges */
+.header-1w9Q93, .footer-5ji8u1 {  
+  border-bottom: 2px solid var(--main-color);
+} /* Search Popout top right */ 
+.theme-dark .container-2McqkF {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  border-radius: var(--border-radius);
+  margin-top: 5px;
+}
+
+
+/* --- Searchbar only visible when Hover --- */
+.full-motion .searchBar-jGtisZ {
+  background-color: transparent;
+  width: 24px;
+} .full-motion .searchBar-jGtisZ:hover {
+  width: 144px;
+  background-color: rgba(140, 140, 140, 0.047);
+  transition: .3s ease-in;
+}.focused-1xh-wG .searchBar-jGtisZ, .open-1F8u2c .searchBar-jGtisZ {
+  width: 144px;
+  background-color: rgba(140, 140, 140, 0.156);
+} .focused-1xh-wG .searchBar-jGtisZ, .open-1F8u2c .searchBar-jGtisZ:hover {
+  background-color: rgba(140, 140, 140, 0.156);;
+} .icon-18rqoe.visible-2yTnyW {
+  color: #fff;
+  cursor: pointer;
+  transform: rotate(0deg);
+  opacity: .5;
+  z-index: 99;
+  scale: 1.4;
+} .icon-18rqoe.visible-2yTnyW:hover {
+  color: #fff;
+  opacity: .7;
+  z-index: 99;
+} .icon-18rqoe.visible-2yTnyW::after {
+  opacity: 0.7;
+} .search-39IXmY {
+  margin: 0 1px;
+  background: transparent;
+} .focused-1xh-wG .searchBar-jGtisZ .iconContainer-1RqWJj, .open-1F8u2c .searchBar-jGtisZ .iconContainer-1RqWJj, .icon-18rqoe.visible-2yTnyW:hover .iconContainer-1RqWJj {
+  scale: .83;
+  transition: .2s;
+  top: -1px;
+} .search-39IXmY {
+  order: -1;
+} .searchBar-jGtisZ {
+  transition: 0.3s ease-in-out !important;
+}
+/* Tools top right */
+.toolbar-3_r2xA .iconWrapper-2awDjA:hover {
+  transform: scale(1.1);
+  margin: 5px;
+} 
+/* Memberlist Icon */
+.iconWrapper-2awDjA:has([d="M14 8.00598C14 10.211 12.206 12.006 10 12.006C7.795 12.006 6 10.211 6 8.00598C6 5.80098 7.794 4.00598 10 4.00598C12.206 4.00598 14 5.80098 14 8.00598ZM2 19.006C2 15.473 5.29 13.006 10 13.006C14.711 13.006 18 15.473 18 19.006V20.006H2V19.006Z"]) {
+  order: 1;
+}
+
+/* Displayed File Box in chat */
+.theme-dark .attachment-1PZZB2 {   
+  height: 50px;
+}
+/* ------- File preview in chat ------- */
+.nonMediaAttachment-3C_4Pd {
+  background-color: transparent;
+  outline: 1px solid transparent;
+  border-radius: 9px;
+  margin-right: 8px;
+  margin-top: 9px;
+}  
+
+
+
+/* Whole Group (file, img and video popout icons */
+.hoverButtonGroup-2yZIzC {                       
+  background-color: transparent;
+}
+
+
+/* Dowload Button in  -- File preview --  */
+.downloadButton-2PkwZg {
+  color: rgb(165, 165, 165);
+} .downloadButton-2PkwZg:hover {
+  color: var(--main-color);
+} .codeIcon-Ni8XUA:hover {
+  color: var(--main-color);
+} .openFullPreviewSection-31zc2v:hover {
+  color: var(--main-color)
+}
+/* Dowload Icon */
+.downloadHoverButtonIcon-16xasX {      
+  height: 25px;
+  width: 25px;
+  color: rgb(195, 195, 195);
+} .downloadHoverButtonIcon-16xasX:hover {
+  color: var(--main-color); 
+}
+/* Delete Button */
+.hoverButton-36QWJk.removeAttachmentHoverButton-3gHROs:hover {
+  background-color: var(--danger-color) !important;
+  border-radius: 8px;
+  height: 25px;
+  width: 25px;
+}   .removeAttachmentHoverButton-3gHROs {
+  height: 25px;
+  width: 25px;
+}
+/* Dowload Button  */ 
+.hoverButton-36QWJk {                  
+  background: unset !important;
+  height: 25px;
+  width: 25px;
+  border: 1px solid transparent;
+  align-items: center;
+  margin: 5px;
+}
+
+/* Avatars in Chat */
+.avatar-2e8lTP:hover {
+  border-radius: 26%;
+  transition: all .35s ease;
+}
+/* Bottom left Avatar Text */
+.theme-dark .container-YkUktl .avatar-1EWyVD:after {
+  content: "";
+} .theme-dark .container-YkUktl .withTagAsButton-OsgQ9L:hover, .theme-dark .container-YkUktl .withTagless-10ooWt:hover {
+  background-color:transparent;
+} /* Avatar hover bottom left */
+.theme-dark .container-YkUktl .avatar-1EWyVD:hover {
+  width: 35px !important;
+  height: 35px !important;
+  transform: scale(1.1);
+}
+
+.applicationStore-2nk7Lo {      /*  Nitro in Friend Menu  */
+  margin: var(--margin);
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+} .container-BZUZfa {         /*  Lower Part, below Nitro bar  */
+  margin-top: 12px;
+  border-radius: 90px;
+} 
+
+
+/* Change Own Stream Prewiew shade and Color */
+.theme-dark .panel-2ZFCRb {
+  background: transparent;
+}
+.activityPanel-9icbyU {
+  border-bottom: none;
+}
+
+
+
+
+
+/* Changes user Roll popout when quickAssingning Rolls thrue --UserPopout-- */
+.container-2kTWmC {
+  background: rgba(0, 0, 0, 0.959);
+  border-radius: 7px;
+  margin: none;
+}
+
+/* ---- Shows Time of edited Messages ----- */
+.timestamp-p1Df1m:not(.timestampInline-_lS3aK, .timestampVisibleOnHover-9PEuZS) time::after {
+  content: " (" attr(aria-label) ")";
+  color: var(--text-muted);
+  font-size: 0.725rem;
+  font-weight: 400;
+  line-height: 1;
+  text-transform: lowercase;
+} .edited-1v5nT8:not(.message-translate-indicator) {
+display: none;
+}
+
+/* Now Active */
+.scroller-hE2gWq {                                          
+  background: var(--main-background);
+  box-shadow: var(--main-box);
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  margin-left: unset;
+  padding: 11px;
+  height: calc(100% - var(--margin) - var(--margin));
+} .theme-dark .outer-2JOHae {
+  border: var(--main-border);
+} .separator-2OaeRP {
+  display: none;
+} 
+
+/* Hover over Friends activitys to open */
+.itemCard-3Etziu {
+  width: 34px;
+  overflow-x: hidden;
+  transition: .3s cubic-bezier(.17,.76,.58,.99);
+}.itemCard-3Etziu > div > header > div:not(.headerAvatar-GgCKcl) {
+  opacity: 0;
+  transition: .3s cubic-bezier(.17,.76,.58,.99);
+}.nowPlayingColumn-1eCBCN {
+  width: 102px !important;
+  min-width: 102px !important;
+  transition: .3s cubic-bezier(.17,.76,.58,.99);
+  pointer-events: all;
+  flex: 0 1 102px;
+} .theme-dark .outer-2JOHae {
+  margin-left: unset;
+}.nowPlayingColumn-1eCBCN:hover {
+  width: 30% !important;
+  min-width: 30% !important;
+  flex: 0 1 30%;
+}.nowPlayingColumn-1eCBCN:hover .itemCard-3Etziu {
+  width: calc(100% - 40px);
+}.nowPlayingColumn-1eCBCN h2 {
+  display: none;
+}.nowPlayingColumn-1eCBCN:hover .itemCard-3Etziu > div > header > div:not(.headerAvatar-GgCKcl) {
+  opacity: 1;
+}.itemCard-3Etziu > div > .body-16rSsp {
+  height: 0;
+  margin-top: 0;
+  overflow: hidden;
+  transition: .3s cubic-bezier(.17,.76,.58,.99);
+  opacity: 0;
+}.nowPlayingColumn-1eCBCN:hover .itemCard-3Etziu > div > .body-16rSsp {
+  height: auto;
+  margin-top: 12px;
+  opacity: 1;
+  border-radius: 10px ;
+  border: var(--main-border);
+}.nowPlayingColumn-1eCBCN .itemCard-3Etziu .headerIcon-2ra-HY {
+  opacity: 0;
+  transition: .3s cubic-bezier(.17,.76,.58,.99);
+  width: 0;
+  height: 0;
+}.nowPlayingColumn-1eCBCN:hover .itemCard-3Etziu .headerIcon-2ra-HY {
+  opacity: 1;
+  height: 24px;
+  width: 24px;
+}.nowPlayingColumn-1eCBCN .scroller-hE2gWq::-webkit-scrollbar {
+  width: 0;
+}
+
+/* --------  Invitation Menu   -------- */
+/* Copy Button  in  Invitation Menu  Alligning */
+.copyButton-2k4drX {
+  margin-left: 9px;
+  width: 90px;
+}
+/*invatation botton of users, depends on Language */
+.inviteRowButton-3hcOhY {  
+  width: 92px;
+}
+/* Background of Invite Popout */
+.focusLock-bHVOlV, .root-1CAIjD {
+  background-color: transparent;
+}
+/* Lower Part */
+.theme-dark .footer-1hTRRZ {  
+  background-color: transparent
+}
+/* "Edit Invitation Link" lower part */
+.theme-dark .footerSeparator-3U8YsT {
+  background-color: transparent;
+}
+
+
+/* ------------- Background Shading ------------- */
+
+.chatContent-3KubbW {     /* Chat */
+  background: var(--main-background);
+  border-radius: var(--border-radius) !important;
+  margin: var(--margin);
+  box-shadow: var(--main-box);
+  overflow: hidden;
+}
+.members-3WRCEx {                              /* Member List */
+  background: var(--main-background);
+  border-top-right-radius: var(--border-radius)!important;
+  border-top-left-radius: var(--border-radius)!important;
+  margin-right: var(--margin);
+  margin-top: var(--margin);  
+  margin-bottom: calc(var(--margin) + 60px);
+  box-shadow: var(--main-box);
+}
+.sidebar-1tnWFu {                              /*  Channel List */
+  background: var(--main-background);
+  border-bottom-right-radius: var(--border-radius)!important;
+  border-top-right-radius: var(--border-radius)!important;
+  margin-bottom: var(--margin);
+  margin-top: var(--margin);
+  box-shadow: var(--main-box);
+}
+.chat-1-OBC7:before { /* Box Shadow of toolbar in Channel Chats */
+  display: none;
+} .chat-25x62K:before {
+  display: none;
+} .chat-25x62K:before {
+  display: none;
+}
+
+/* Toolbar above Support Chats */
+.container-ZMc96U.themed-Hp1KC_:has([d^="M7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001ZM14 12.001C14 10.8964 13.1046 10.001 12 10.001C10.8954 10.001 10 10.8964 10 12.001C10 13.1055 10.8954 14.001 12 14.001C13.1046 14.001 14 13.1055 14 12.001ZM19 10.001C20.1046 10.001 21 10.8964 21 12.001C21 13.1055 20.1046 14.001 19 14.001C17.8954 14.001 17 13.1055 17 12.001C17 10.8964 17.8954 10.001 19 10.001Z"]) {
+  height: 48px;
+  background: var(--main-background);
+  border-radius: calc(var(--border-radius) - 3px);
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  margin-top: var(--margin);
+  box-shadow: var(--main-box);
+  width: auto;
+}
+.container-ZMc96U.themed-Hp1KC_[aria-label="Kanalüberschrift"], /* Toolbar at the top of Channel Chat*/
+.theme-dark.container-ZMc96U.themed-Hp1KC_,      /* Toolbar at the top of Friends Menu */
+.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ {   /* Toolbar at the top of Chat*/
+  height: 48px;
+  width: auto;
+  background: var(--main-background);
+  border-radius: calc(var(--border-radius) - 3px);
+  margin-left: var(--margin);
+  margin-right: var(--margin);
+  margin-top: var(--margin);
+  box-shadow: var(--main-box);
+} .theme-dark.container-ZMc96U.transparent-1lUmft { /* Toolbar to the top of Stream */
+  height: 48px;
+  background: transparent;
+  border-radius: calc(var(--border-radius) - 3px);
+  margin: 10px;
+  margin-bottom: unset;
+  border: var(--main-border);
+  box-shadow: var(--main-box);
+  width: auto;
+  background-color: var(--main-background);
+}
+
+.headerBar-1dSpQr.container-ZMc96U.themed-Hp1KC_ {  /* Header of Nitro */
+  background-color: transparent;
+  height: 35px;
+  margin: 10px;
+  margin-bottom: unset;
+} .headerBar-1dSpQr:before {
+  box-shadow: none;
+}
+/* Discover pubblic Servers */
+.scroller-3j5xK2 {
+  background: var(--main-background);
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  box-shadow: var(--main-box);
+  max-height: calc(100% - var(--margin) - var(--margin));
+  overflow: hidden;
+} .scroller-RfJjkV.thin-RnSY0a.scrollerBase-1Pkza4 {
+  background: var(--main-background);
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  box-shadow: var(--main-box);
+  max-height: calc(100% - var(--margin) - var(--margin));
+  overflow: hidden;
+}
+
+
+.theme-dark .scroller-3X7KbA {                  /* Server List */
+  background: var(--main-background);
+  border-bottom-left-radius: var(--border-radius);
+  border-top-left-radius: var(--border-radius);
+  margin: var(--margin);
+  margin-right: unset;
+  border-right: var(--main-border);
+  box-shadow: var(--main-box);
+} .wrapper-1_HaEi {
+  width: fit-content;
+} .listItem-3SmSlK {
+  top: 7px;
+}
+.list-3FIpnh>div:first-child {    /* Support */
+  background: transparent;
+} .container-3wLKDe {             /* Support Cards */
+  background: var(--main-background) !important;
+  margin: var(--margin);
+  box-shadow: var(--main-box);
+  border-radius: 12px;
+  overflow: hidden;
+} .theme-dark .mainCard-3KBsBI.isOpen-2OXbFs {
+  background-color: rgba(57, 58, 66, 0.173);
+  scale: 1.017;
+  transition: .25s;
+} .theme-dark .mainCard-3KBsBI:hover {
+  transform: scale(1.01);
+  transition: .25s;
+}
+
+/* Select Friends for Group Popout */
+.theme-dark .popout-3gby1q.root-1CAIjD {
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  border-radius: 15px;
+}
+
+ /* Hover over Messages in Chat */
+.message-2CShn3.cozyMessage-1DWF9U.groupStart-3Mlgv1.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz:hover, .message-2CShn3:hover, .message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover {                         
+  background-color: rgba(27, 27, 41, 0.177);
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+
+} .mentioned-Tre-dv {
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+}
+/* Quick Acces Top right when hovering Chat Messages */
+ .wrapper-2vIMkT .button-3bklZh:hover, .wrapper-2vIMkT .button-3bklZh.selected-69H4ua:hover {
+  background-color: var(--hover-color); 
+} .full-motion .wrapper-2vIMkT {
+  border-radius: calc(var(--border-radius) - 3px);
+  background-color: var(--background-overlay);
+} .full-motion .wrapper-2vIMkT:hover {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+} 
+
+.resizeHandle-PBRzPC {                          /* Resize Handler */
+  max-height: 98%;
+  width: 10px;
+  margin: auto;
+  background-color: transparent;
+} .wrapper-1gVUIN {                             /* Watching Stream */
+  background: transparent;
+} .nowPlayingColumn-1eCBCN {                    /* Active Friends */
+  background: transparent;
+} .container-1-ERn5 {                           /* Server Display above Channels */
+  background: transparent;
+} .theme-dark .container-1NXEtd .header-3OsQeK {
+  background: none !important;
+} .theme-dark .container-1NXEtd .header-3OsQeK:hover {
+  background: var(--gray-hover) !important;
+}
+.channelTextArea-1FufC0:hover {                         /* Chat Text Area */
+  background-color: rgba(41, 41, 66, 0.384);
+} .channelTextArea-1FufC0 {
+  background-color: rgba(42, 42, 68, 0.216);
+}
+.container-YkUktl>.flex-3BkGQD {                    /* Mute and Settings Button */
+  background-color: transparent;
+}
+.container-1zzFcN>.flex-3BkGQD {                    /* Disconnect button and Display Channel and if Connected */
+  background-color: transparent;
+}
+.peopleColumn-1wMU14 {                              /* Friends Menu */
+  background-color: var(--main-background);
+  margin: var(--margin);
+  box-shadow: var(--main-box);
+  border-radius: var(--border-radius);
+}
+.content-1jQy2l .searchResultsWrap-5RVOkx {         /*  Server Search Results */  
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+  margin-left: unset;
+} .justifyEnd-2G0m6w {                                    /* Fullscreen Button in Stream  */             
+  margin-right: 10px;
+} .callContainer-HtHELf {                                 /* Background while watching Stream */
+  background-color: var(--main-background);
+  border-radius: var(--border-radius);
+  margin: var(--margin);
+} .chatIcon-R5MUNn svg, .unreadCount-eHeIkt {             /*  Chat icon top right while watching Stream  */ 
+  margin-top: 10px;
+  margin-right: 9px;
+  margin-left: -10px;
+} .content-1gYQeQ {                                       /*  Selected Channel and hover */
+  max-width: 93%;
+} .searchBarComponent-3N7dCG:hover {                      /* Hover */
+  color: var(--main-color);
+}
+
+/* Quick Switcher  */
+.searchBar-3TnChZ .searchBarComponent-3N7dCG {          
+  background-color: transparent;
+  min-width: fit-content;
+} /* Quick Switcher Popout (CTRL+K) */
+.quickswitcher-pKcM9U {                                  
+  background-color: var(--popout-color);
+  border: var(--main-border);
+} .input-3r5zZY {                                       
+  max-height: 35px;
+} /* Quick Switcher Button */
+.searchBar-3TnChZ {
+  box-shadow: none;
+  height: fit-content;
+  border: 1px solid transparent;
+  margin: 5px;
+  top: 5px;
+  background-color: transparent;
+  min-width: fit-content;
+} .searchBar-3TnChZ:hover {
+  border: var(--main-border);
+  border-radius: 10px;
+  margin: 5px;
+  top: 5px;
+} 
+
+/* Nitro and Friends button in direct Messages */
+.interactive-26HRN_.interactive-iyXY_x.linkButton-2NshQj,
+.interactive-26HRN_.interactive-iyXY_x.linkButton-2NshQj.interactiveSelected-29CP8y.selected-26oxtA {
+  top: 5px;
+  max-height: 40px;
+}
+/* Server Header and Quick Switcher Button */
+.header-3OsQeK, .searchBar-3TnChZ, .tabBody-2dgbAs::before {
+  box-shadow: none;
+} 
+
+.withFrame-2dL45i {                         /*  Windows Bar */
+  background-color: rgba(6, 6, 7, 0.571);
+} 
+
+/* Scrollbars */
+.scroller-1ox3I2::-webkit-scrollbar {
+  display: none; /* Channel List */
+}
+.scroller-3X7KbA::-webkit-scrollbar {
+  display: none; /* Server List */
+}
+.members-3WRCEx::-webkit-scrollbar {
+  display: none; /* Member List */
+}
+.contentRegionScroller-2_GT_N::-webkit-scrollbar {
+  display: none; /* Setting Main */
+}
+.scroller-hE2gWq::-webkit-scrollbar {
+  display: none; /* Active Friends List */
+}
+.scroller-nxCRu_::-webkit-scrollbar { 
+  width: 8px !important;   /* Right Click Menus */
+  color: transparent;
+}
+.scroller-2qwVWY::-webkit-scrollbar {     
+  width: 10px !important;   /* Find or start Conversation */
+}
+.modalContent-xzlaTm::-webkit-scrollbar {   /* ban Popout */
+  display: none;
+}
+.infoScroller-1QMpon::-webkit-scrollbar {    /* right click User Profile */
+  display: none;
+}
+.scroller-3j5xK2::-webkit-scrollbar {       /* Discover public Server */
+  display: none;
+}
+
+/* Timestamps only shows when hovering the message */
+.timestamp-p1Df1m {
+  transform: translateX(-5px);
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: .3s ease;
+  font-size: 0.710rem !important;
+} .mouse-mode.full-motion .message-2CShn3:hover .timestamp-p1Df1m {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Hide Wave at smb who joined server */
+.lookFilled-1H2Jvj.colorPrimary-2-Lusz {
+  display: none;
+}
+/* Hide Gift Button in Messages */
+.buttons-uaqb-5 > .button-ejjZWC {
+  display: none
+}
+
+/* Notification and Slected Server indicator */
+.item-2LIpTv {
+  box-shadow: 0 0 5px var(--main-color)
+}
+
+/* Remove super reactions */
+.button-3bklZh[aria-label="Super-Reaktion hinzufügen"],
+.colorPremiumGradient-38tGFG.focused-3LIdPu, .colorPremiumGradient-38tGFG:active:not(.hideInteraction-1vQrZJ),
+.colorPremiumGradient-38tGFG,
+.reactionBtn-3I19bq:has(path[d^="M20.3397 14.2379C21.2318"]),
+.navButton-Z_c6CC[id="super-reaction-picker-tab"] {
+  display: none;
+}
+
+
+/* "Coloured Folder Icons" */
+.closedFolderIconWrapper-3tRb2d {
+    display: none;
+}
+.folderIconWrapper-1oRIZr:not([style=""])::before {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background-color: inherit;
+    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+    transform: scale(1.3335);
+    filter: brightness(1.5) saturate(1.5);
+}
+/* Remove Clear Visions Folder Background */
+.expandedFolderBackground-1kSAf6 {
+  background-color: transparent;
+} .expandedFolderIconWrapper-3RwQpD {
+  background-color: var(--gray-hover);
+}
+
+/* Rainbow User Name */
+[src*="416353640073134082"] + .header-2jRmjb .username-h_Y3Us {
+  background-image: linear-gradient(to left, blue,purple,blue);
+  animation: gradient-border 9s linear infinite;
+  background-size: 400% 100%;
+  color: transparent !important;
+  -webkit-background-clip: text;
+  position: relative;
+  z-index: 1;
+}
+@keyframes gradient-border {
+  from { background-position: 0 0; }
+  to { background-position: 130% 0; }
+}
+
+/* --------------  BD  -------------- */
+
+/* Fixes non Displayed icons in BD Settings */
+.sidebar-nqHbhN .bd-updates-tab.item-2GWPIy:before {
+  background-image: url(https://clearvision.github.io/icons/update.svg);
+} /* Fixes Device Incon */
+.sidebar-nqHbhN [aria-controls="sessions-tab"].item-2GWPIy::before {
+  background-image: url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/svgs/settingsicons/sessions.svg);
+  filter: invert(1);
+  transform: scale(0.89);
+}
+
+/* BD Settings to Top */
+.side-1lrxIh > :where(.bd-sidebar-header, [class*=-tab], [class*=-tab]+.separator-2N511j, :nth-child(-n+9)) {
+  order: -2;
+}
+/* Adds lines left and right to BD Settings Header */
+.bd-sidebar-header {
+  padding-top:20px;
+  display:flex;
+  align-items:center;
+  justify-content:center
+}.bd-sidebar-header:before {
+  content:"";
+  height:2px;
+  flex-grow:1;
+  background:linear-gradient(to left, var(--main-color) 50%, transparent);
+  margin-right:5px
+}.bd-sidebar-header:after {
+  content:"";
+  height:2px;
+  flex-grow:1;
+  background:linear-gradient(to right, var(--main-color) 50%, transparent);
+  margin-left:5px
+}.bd-sidebar-header>span {
+  max-width:100%;
+  overflow:hidden;
+  text-overflow:ellipsis
+}
+
+
+/* ----------- Plugins ----------- */
+
+/* Better Volume */
+.container-BetterVolume {
+    background-color: var(--main-background);
+    border: var(--main-border);
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  /* Better Formatting */
+  .bf-toolbar::before {           
+    background-color: var(--popout-color);
+    border: var(--main-border);
+    border-radius: 10px;
+  }
+  
+  /*  DateViewer  */
+  #dv-mount {
+    background-color: var(--main-background);
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: fixed;
+    width: 240px;
+    z-index: 1;
+    border-bottom-right-radius: var(--border-radius);
+    border-bottom-left-radius: var(--border-radius);
+    margin-bottom: var(--margin);
+    box-shadow: var(--main-box);
+  } #dv-main {
+    --gap: 0px;
+    border-top: 1px solid hsla(0, 0%, 25%, 0.296);
+    background: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(100% - var(--gap) * 1);
+  } #dv-main .dv-date {
+    font-size: small;
+    opacity: .6;
+  } #dv-main .dv-weekday { 
+    display: none;
+  } .theme-light #dv-mount {
+    background-color: #ffffff00;
+  } .theme-light #dv-main {
+    border-top: 1px solid #e6e6e6;
+    color: #ffffff00;
+  }
+
+/* Show All Connections icons */
+  .connectionIcon-888F4s {
+    width: 110%;
+  }
+
+/* Moves Profile picture to center in profiles */ 
+.bannerSVGWrapper-2CLfzN circle {
+  cx: 50%;
+} .avatarWrapper-eenWra, .avatar-3QF_VA {
+  left: 50%;
+  transform: translateX(-50%);
+}
+  
+/* Change Text in TopLeft corner */
+.wordmark-2u86JB:before {
+  content:"Clean edit" !important;
+  font-size: 12px !important;
+  margin-top: 3% !important;
+  font-family: 'Oxanium';
+}
+.wordmark-2u86JB:after { 
+  content: "" !important;
+}
+/* Change Popout text below mute Buttons (Before Static, After Animated) */
+.container-YkUktl:before {
+  content:"" !important;
+}
+.container-YkUktl:after {
+  content: "Edited by Momo" !important;
+  margin-bottom: 10px;
+}
+
+:root {
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(5, 5, 5, 0); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-image: url(); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
+  --backdrop-position: center left; /* modal backdrop position [default: var(--background-position)] */
+  --backdrop-size: cover; /* modal backdrop size [default: var(--background-size)] */
+  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
+  --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
+  --backdrop-brightness: 90%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --backdrop-contrast: 100%; /* modal backdrop contrast [default: var(--background-contrast)] */
+  --backdrop-saturation: 100%; /* modal backdrop saturation [default: var(--background-saturation)] */
+  --backdrop-invert: 0%; /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
+  --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
+  --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
+  --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
+  --user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
+  --user-modal-repeat: none; /* user modal background repeat [default: var(--background-repeat)] */
+  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
+  --user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(--background-contrast)] */
+  --user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(--background-saturation)] */
+  --user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(--background-invert)] */
+  --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
+  --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
+  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+
+  /* THEME BD COLORS */
+  --bd-blue: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+  --bd-blue-hover: rgba(rgba(31, 27, 255, 0.412)); /* betterdiscord hover color [default: var(--hover-color)] */
+  --bd-blue-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+}
