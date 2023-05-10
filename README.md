@@ -21,6 +21,7 @@ Fuck You
 p {
 font-size: 25px;
 font-family: arial;
+font-color: black:
 }
 div {
 text-align:center;
@@ -49,9 +50,11 @@ background: radial-gradient(circle, rgba(70,63,251,1) 0%, rgba(242,70,252,1) 100
 }
 p {
 text-align: center;
+font-color: black:
  }
 h1 {
 text-align: center;
+font-color: black:
 }
 
 </style>
