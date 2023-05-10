@@ -23,12 +23,11 @@
 			margin: 3rem;
 			text-align: justify;
 		}
-	</style>
-</head>
-<body>
-	<h1>Wilkommen</h1>
-	<p>
-		Hier ist der Inhalt deines README-Files.
-	</p>
+
+	<h2>Wilkommen</h1>
+	<p1>
+		Hier siehst du gar nichts.
+	</p2>
+		...
 </body>
 </html>
