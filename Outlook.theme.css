@@ -1,0 +1,203 @@
+/**
+ * @name Outlook
+ * @author maenDisease
+ * @version 1.0.0
+ * @description Based on Outlook Web. Customize with https://bdeditor.dev/theme/Outlook
+ * @source https://github.com/maenDisease/Outlook
+ * @website https://maendisease.github.io/
+ * @invite BShu37e4jg
+*/
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
+@import url('https://maendisease.github.io/Outlook/Outlook.css');
+
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/bdAddonMini.css);
+:root {
+  --home-image: url(https://maendisease.github.io/Outlook/illustrations/homeimage-default.avif);
+  --accent-hue: 190;
+  --accent-saturation: 85%;
+  --accent-brightness: 40%;
+  --gradient-toggle: 1;
+  --gradient-hue-shift: 0.2;
+  --gradient-saturation: 50%;
+  --gradient-deg: 179.52deg;
+  --customFont: "Karla";
+
+  /* Custom */ 
+  --popout-color: rgba(22, 20, 20, 0.303);
+}
+
+/* --- Move Mute and Settings buttons to default --- */
+/* Mute, Settings Button */
+.container-YkUktl > .flex-2S1XBF {
+  position: fixed;
+  left: calc(79px + 53px + 8px);
+  bottom: 5px;
+  border-radius: 10px !important;
+} .container-YkUktl > .flex-2S1XBF > button:hover, #app-mount .avatarWrapper-1B9FTW:hover {
+  border-radius: 10px;
+} /* Profile Avatar button */
+.avatarWrapper-1B9FTW {
+  position: fixed;
+  left: 82px;
+  bottom: 5px;
+} /* Channel List */
+.sidebar-1tnWFu {
+  height: calc(100% - 60px);
+  border-bottom: 1px solid rgba(128, 128, 128, 0.303) !important;
+  overflow: hidden;
+} /* Activity button */
+.button-1EGGcP:has([d^="M4.92871 13.4149L10.5857"]) {
+  display: none;
+}
+
+/* Channel List Text */
+.overflow-1wOqNV {
+  font-size: 13.5px;
+} .content-1gYQeQ .name-28HaxV {
+  font-size: 14.5px;
+}
+/* Server icons */
+.listItem-3SmSlK .wrapper-2PSQCG .icon-3AqZ2e {
+  scale: .82;
+  border-radius: 10px;
+} .listItem-3SmSlK .wrapper-2PSQCG .icon-3AqZ2e:hover {
+  border-radius: 40%;
+}
+
+
+
+/* Channel Content */
+.content-1gYQeQ {
+  margin-right: 9px;
+}
+
+/* Chat container */
+.chatContent-3KubbW {
+  border: 1px solid var(--background-tertiary);
+}
+
+/* Searbar */
+.search-39IXmY {
+  left: calc(50% - 100px);
+}  /* Search Popout top right */ 
+.container-2McqkF {
+  margin-top: 5px;
+}
+
+/* Windows Buttons */
+.platform-win .typeWindows-2-g3UY {
+  position: fixed;
+  right: 0px;
+  background: var(--brand-experiment);
+  width: 80px;
+} .theme-dark .container-YkUktl {
+  left: 0px;
+} .container-YkUktl::before {
+  margin-left: 10px;
+} .winButtonClose-3Q8ZH5[aria-label="Schließen"] {
+  order: 4;
+  width: 13px !important;
+  height: 13px !important;
+} .winButtonMinMax-3RsPUg[aria-label="Minimieren"] {
+  width: 13px !important;
+  height: 13px !important;
+} .winButtonMinMax-3RsPUg[aria-label="Maximieren"] {
+  width: 13px !important;
+  height: 13px !important;
+}
+
+/* Scrollbars */
+.scroller-1ox3I2::-webkit-scrollbar {
+  display: none;  /* Channel List */
+}
+.scroller-3X7KbA::-webkit-scrollbar {
+  display: none; /* Server List */
+}
+.members-3WRCEx::-webkit-scrollbar {
+  display: none; /* Member List */
+}
+.contentRegionScroller-2_GT_N::-webkit-scrollbar {
+  display: none; /* Setting Main */
+}
+.scroller-hE2gWq::-webkit-scrollbar {
+  display: none; /* Active Friends List */
+}
+.scroller-nxCRu_::-webkit-scrollbar { 
+  width: 8px !important;   /* Right Click Menus */
+  color: transparent;
+}
+.scroller-2qwVWY::-webkit-scrollbar {     
+  width: 14px;   /* Find or start Conversation */
+}
+.modalContent-xzlaTm::-webkit-scrollbar {   /* ban Popout */
+  display: none;
+}
+.infoScroller-1QMpon::-webkit-scrollbar {    /* right click User Profile */
+  display: none;
+}
+.scroller-3j5xK2::-webkit-scrollbar {       /* Discover public Server */
+  display: none;
+}
+
+
+  /*  DateViewer  */
+  #dv-mount {
+    background-color: transparent;
+    bottom: 0px;
+    box-sizing: border-box;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    position: fixed;
+    width: 240px;
+    z-index: 1;
+  } #dv-main {
+    --gap: 0px;
+    background: transparent;
+    box-sizing: border-box;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    line-height: 20px;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    width: calc(100% - var(--gap) * 1);
+  } #dv-main .dv-date {
+    font-size: small;
+    opacity: .6;
+  } #dv-main .dv-weekday { 
+    display: none;
+  } .theme-light #dv-mount {
+    background-color: #ffffff00;
+  } .theme-light #dv-main {
+    border-top: 1px solid #e6e6e6;
+    color: #ffffff00;
+  }
+
+
+  /* Floating Folder */
+.wrapper-38slSD:active {
+  -webkit-transform: unset;
+  transform: none;
+}
+
+[id^="folder-items-"] {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow-y: auto;
+  max-height: calc(100vh - 72px);
+  margin: auto auto auto calc(72px + 8px);
+  padding-top: 8px;
+  border-radius: 8px;
+  background: var(--background-floating);
+  -webkit-box-shadow: var(--elevation-high);
+  box-shadow: var(--elevation-high);
+}
+
+
+
+

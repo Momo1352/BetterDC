@@ -1,0 +1,76 @@
+/**
+ * @name Plugin Suport New Shaded
+ * @author Momo
+ * @version 0.0.1
+ * @description Still Highly customizable theme for BetterDiscord.
+ * @source https://github.com/Momo1352/BetterDC
+ * @website https://clearvision.github.io
+
+/* Credits to ClearVision for making the original theme. */
+
+
+/* ----------- Plugins ----------- */
+
+/* Better Volume */
+.container-BetterVolume {
+  background-color: var(--main-background);
+  border: var(--main-border);
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+/* Better Formatting */
+.bf-toolbar::before {           
+  background-color: var(--popout-color);
+  border: var(--main-border);
+  border-radius: 10px;
+}
+
+/*  DateViewer  */
+#dv-mount {
+  background-color: var(--main-background);
+  bottom: 0px;
+  box-sizing: border-box;
+  display: flex;
+  height: 60px;
+  justify-content: center;
+  position: fixed;
+  width: 240px;
+  z-index: 1;
+  border-bottom-right-radius: 20px !important;
+  border-bottom-left-radius: 20px !important;
+  margin-bottom: 10px;
+} #dv-main {
+  --gap: 0px;
+  border-top: 1px solid hsla(0, 0%, 25%, 0.296);
+  background: transparent;
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  line-height: 20px;
+  justify-content: center;
+  text-align: center;
+  text-transform: uppercase;
+  width: calc(100% - var(--gap) * 1);
+  border-radius: px;
+} #dv-main .dv-date {
+  font-size: small;
+  opacity: .6;
+} #dv-main .dv-weekday { 
+  display: none;
+} .theme-light #dv-mount {
+  background-color: #ffffff00;
+} .theme-light #dv-main {
+  border-top: 1px solid #e6e6e6;
+  color: #ffffff00;
+} .memberListSelector {
+  margin-bottom: 90px !important;
+}
+
+
+/* Show All Connections icons */
+.connectionIcon-888F4s {
+  width: 110%;
+}
