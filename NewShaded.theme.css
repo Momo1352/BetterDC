@@ -1,4 +1,22 @@
+/**
+ * @name New Shaded Free
+ * @author Momo
+ * @version 0.0.1
+ * @description Still Highly customizable theme for BetterDiscord.
+ * @source https://github.com/Momo1352/BetterDC
+ * @website https://clearvision.github.io
 
+/* Credits to ClearVision for making the original theme. */
+
+/* setTimeout(() => { debugger }, 3000) /* 
+
+/* IMPORT CSS */
+@import url(https://clearvision.github.io/ClearVision-v6/main.css); 
+@import url(https://maendisease.github.io/BetterDiscordStuff/css/ProfileBannerSkins.css);
+@import url(//dablulite.github.io/BetterFloatingEditor/import.css);
+
+@import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Oxanium:wght@400&display=swap);
 
 
 /* SETTINGS */
