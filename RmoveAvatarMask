@@ -1,0 +1,29 @@
+/* Avatars in Member List */
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-round-32)"], 
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"], 
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r27:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r20:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ro:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r12:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r10:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rs:)"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r18:)"] {
+  border-radius: 50%;
+} 
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-round-32)"], 
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"], 
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r27:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r20:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ru:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ro:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r12:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r10:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rs:)"],
+.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r18:)"] {
+  transition: .35s ease;
+  border-radius: 26%;
+  mask: none;
+} 
