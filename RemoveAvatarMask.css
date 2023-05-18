@@ -34,12 +34,12 @@
   transition: .3s ease;
 }
 
-
+.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
 .avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
 .userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
 .container-YkUktl:hover  .avatar-1EWyVD rect[mask^="url(#"],
-.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
 .clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
+.userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
 .clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
 .message-2CShn3:hover .avatarDecoration-34OC0G {
   animation-name: Opacity;
