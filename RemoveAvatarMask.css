@@ -1,29 +1,70 @@
-/* Avatars in Member List */
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-round-32)"], 
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"], 
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r27:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r20:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ro:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r12:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r10:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rs:)"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r18:)"] {
+.message-2CShn3:hover .avatar-2e8lTP {
+  transform: scale(1.05);
+  transition: .35s ease;
+  border-radius: 26%;
+}
+
+.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL foreignObject[mask^="url(#"],
+.userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA foreignObject[mask^="url(#"] {
+  mask: none;
+  border-radius: 26%;
+  animation-name: border-transition;
+  animation-duration: 0.35s;
+  animation-timing-function: ease;
+}
+
+.container-YkUktl .avatar-1EWyVD foreignObject[mask^="url(#"],
+.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
   border-radius: 50%;
 } 
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-round-32)"], 
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#svg-mask-avatar-status-mobile-32)"], 
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r27:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r20:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rm:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ru:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:ro:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r12:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r10:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:rs:)"],
-.clickable-28SzVr:hover > .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask="url(#:r18:)"] {
+
+.container-YkUktl:hover  .avatar-1EWyVD foreignObject[mask^="url(#"],
+.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
+  transform: scale(1.05);
   transition: .35s ease;
   border-radius: 26%;
   mask: none;
 } 
+
+
+.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL rect[mask^="url(#"],
+.userPopoutInner-nv9Y92:hover .bannerSVGWrapper-2CLfzN circle,
+.userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA circle {
+  fill: transparent;
+  transition: .3s ease;
+}
+
+
+.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
+.userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
+.container-YkUktl:hover  .avatar-1EWyVD rect[mask^="url(#"],
+.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
+.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
+.clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
+.message-2CShn3:hover .avatarDecoration-34OC0G {
+  animation-name: Opacity;
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  opacity: 0;
+}
+
+
+
+@keyframes border-transition {
+  0% {
+    border-radius: 50%;
+  }
+  100% {
+    border-radius: 26%;
+  }
+}
+
+
+@keyframes Opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
