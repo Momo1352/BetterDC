@@ -4,6 +4,15 @@
   border-radius: 26%;
 }
 
+.container-YkUktl:hover  .avatar-1EWyVD foreignObject[mask^="url(#"],
+.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
+  transform: scale(1.05);
+  transition: .35s ease;
+  border-radius: 26%;
+  mask: none;
+} 
+
+
 .userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL foreignObject[mask^="url(#"],
 .userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA foreignObject[mask^="url(#"] {
   mask: none;
@@ -16,14 +25,6 @@
 .container-YkUktl .avatar-1EWyVD foreignObject[mask^="url(#"],
 .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
   border-radius: 50%;
-} 
-
-.container-YkUktl:hover  .avatar-1EWyVD foreignObject[mask^="url(#"],
-.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
-  transform: scale(1.05);
-  transition: .35s ease;
-  border-radius: 26%;
-  mask: none;
 } 
 
 
@@ -46,7 +47,6 @@
   animation-timing-function: ease;
   opacity: 0;
 }
-
 
 
 @keyframes border-transition {
