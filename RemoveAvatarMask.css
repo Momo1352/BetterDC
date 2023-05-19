@@ -1,6 +1,7 @@
 /* Removes all kind of Avatar Masks on Hover and changes border Radius to 26% */
 
 
+
 .selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW foreignObject[mask^="url(#"] {
   mask: none;
   border-radius: 26%;
@@ -70,15 +71,19 @@
   transition: .3s ease;
 }
 
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
-.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
-.userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
+
 .userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
 .userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
-.container-YkUktl:hover  .avatar-1EWyVD rect[mask^="url(#"],
+
 .clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
-.selected-1-Z6gm .layout-1qmrhw .avatarDecoration-2Wb1Au,
 .clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
+
+.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
+.selected-1-Z6gm .layout-1qmrhw .avatarDecoration-2Wb1Au,
+
+.avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
+.userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
+.container-YkUktl:hover  .avatar-1EWyVD rect[mask^="url(#"],
 .message-2CShn3:hover .avatarDecoration-34OC0G {
   animation-name: Opacity;
   animation-duration: .3s;
@@ -105,5 +110,3 @@
     opacity: 0;
   }
 }
-  border-radius: 50%;
-} 
