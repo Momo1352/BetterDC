@@ -1,7 +1,5 @@
 /* Removes all kind of Avatar Masks on Hover and changes border Radius to 26% */
 
-
-
 .selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW foreignObject[mask^="url(#"] {
   mask: none;
   border-radius: 26%;
@@ -33,7 +31,7 @@
   transition: .35s ease;
   border-radius: 26%;
 }
-  
+.avatarDecorationHint-3n-p6O foreignObject[mask^="url(#"],
 .selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
 .svg-lIB-lq.avatarHint-k7pYop foreignObject[mask^="url(#"],
 .container-YkUktl:hover  .avatar-1EWyVD foreignObject[mask^="url(#"],
@@ -99,6 +97,17 @@
   100% {
     border-radius: 26%;
   }
+}
+  
+  
+@keyframes Opacity {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 }
   
   
