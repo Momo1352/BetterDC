@@ -1,4 +1,3 @@
-
 .avatarWrapperNormal-ahVUaC:hover .avatarDecorationHint-3n-p6O,
 .avatarWrapperNormal-ahVUaC:hover .avatarHint-k7pYop,
 .avatarHintInner-2HUAWj {
@@ -49,23 +48,25 @@
 .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
   border-radius: 50%;
 } 
-  
+
+
 .avatarHintInner-2HUAWj circle,
 .userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL circle,
 .userPopoutInner-nv9Y92:hover .bannerSVGWrapper-2CLfzN circle,
+.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL rect[mask^="url(#"],
 .userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA circle, 
-.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL rect[mask^="url(#"] {
+.userProfileModalInner-3dx9L9:hover .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"]  {
   fill: transparent;
   transition: .3s ease;
- }
+}
 
 
 .avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
 .userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
+.userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
+.userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
 .container-YkUktl:hover  .avatar-1EWyVD rect[mask^="url(#"],
 .clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
-.userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
-.userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
 .clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
 .message-2CShn3:hover .avatarDecoration-34OC0G {
   animation-name: Opacity;
