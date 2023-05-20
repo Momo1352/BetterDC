@@ -1,7 +1,5 @@
 /* Removes all kind of Avatar Masks on Hover and changes border Radius to 26% */
 
-
-
 .selected-1-Z6gm .avatar-6qzftW foreignObject[mask^="url(#"] {
   mask: none;
   border-radius: 26%;
@@ -22,8 +20,11 @@
   top: 0px;
 }
 
+
 .userProfileModalInner-3dx9L9:hover .avatar-3QF_VA,
-.userPopoutInner-nv9Y92:hover .avatarWrapper-eenWra {
+.userPopoutInner-nv9Y92:hover .avatarWrapper-eenWra,
+.userPopoutInner-nv9Y92:hover .imageUploaderIconWrapper-14sdnH,
+.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ {
   transition: .35s ease;
   background-color: transparent;
   box-shadow: none;
@@ -33,6 +34,12 @@
   transition: .35s ease;
   border-radius: 26%;
 }
+
+.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .bannerSVGWrapper-2CLfzN foreignObject[mask^="url(#"],
+.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ foreignObject[mask^="url(#"],
+
+.userPopoutInner-nv9Y92:hover .avatar-3mTjvZ foreignObject[mask^="url(#"],
+.userPopoutInner-nv9Y92:hover .avatarUploaderInner-p38nm2,
 
 .avatarDecorationHint-3n-p6O foreignObject[mask^="url(#"],
 .selected-1-Z6gm .avatar-6qzftW rect[mask^="url(#"],
@@ -79,6 +86,10 @@
   transition: .35s ease;
 }
 
+
+.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ rect[mask^="url(#"],
+.userPopoutInner-nv9Y92:hover .status-170GHg, .statusDotBackground-16Gr51 rect[mask^="url(#"],
+.userPopoutInner-nv9Y92:hover .imageUploaderIcon-2OHmFu,
 
 .interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K rect[mask^="url(#"],
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .wrapper-3Un6-K rect[mask^="url(#"],
