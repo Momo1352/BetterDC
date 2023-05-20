@@ -1,7 +1,8 @@
 /* Removes all kind of Avatar Masks on Hover and changes border Radius to 26% */
 
 
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW foreignObject[mask^="url(#"] {
+
+.selected-1-Z6gm .avatar-6qzftW foreignObject[mask^="url(#"] {
   mask: none;
   border-radius: 26%;
   fill: transparent;
@@ -34,14 +35,14 @@
 }
 
 .avatarDecorationHint-3n-p6O foreignObject[mask^="url(#"],
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
+.selected-1-Z6gm .avatar-6qzftW rect[mask^="url(#"],
 .svg-lIB-lq.avatarHint-k7pYop foreignObject[mask^="url(#"],
 .container-YkUktl:hover  .avatar-1EWyVD foreignObject[mask^="url(#"],
-.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"],
+.clickable-28SzVr:hover .wrapper-3Un6-K foreignObject[mask^="url(#"],
 .userProfileInnerThemedWithBanner-25XGmz:hover .bannerSVGWrapper-2CLfzN foreignObject[mask^="url(#"],
 .interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject[mask^="url(#"],
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .mask-1y0tyc.svg-1G_H_8 foreignObject[mask^="url(#"],
-.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject[mask^="url(#"] {
+.outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject[mask^="url(#"] {
   transition: .35s ease;
   border-radius: 26%;
   mask: none;
@@ -58,8 +59,7 @@
 }
   
 
-.container-YkUktl .avatar-1EWyVD foreignObject[mask^="url(#"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"],
+.container-YkUktl .avatar-1EWyVD foreignObject[mask^="url(#"], .wrapper-3Un6-K foreignObject[mask^="url(#"],
 .wrapper-3Un6-K foreignObject[mask^="url(#"] ,
 .wrapper-3Un6-K rect[mask^="url(#"] {
   border-radius: 50%;
@@ -82,16 +82,16 @@
 
 .interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K rect[mask^="url(#"],
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .wrapper-3Un6-K rect[mask^="url(#"],
-.theme-dark .outer-2JOHae.active-1W_Gl9, .theme-dark .outer-2JOHae.interactive-2zD88a:hover .wrapper-3Un6-K rect[mask^="url(#"],
+.outer-2JOHae.interactive-2zD88a:hover .wrapper-3Un6-K rect[mask^="url(#"],
 
 .userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
 .userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
 
-.clickable-28SzVr:hover .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
+.clickable-28SzVr:hover .wrapper-3Un6-K rect[mask^="url(#"],
 .clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
 
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
-.selected-1-Z6gm .layout-1qmrhw .avatarDecoration-2Wb1Au,
+.selected-1-Z6gm .avatar-6qzftW rect[mask^="url(#"],
+.selected-1-Z6gm .avatarDecoration-2Wb1Au,
 
 .avatarHoverTarget-1zzfRL:hover rect[mask^="url(#"],
 .userProfileModalInner-3dx9L9:hover rect[mask^="url(#"],
@@ -122,4 +122,3 @@
     opacity: 0;
   }
 }
-
