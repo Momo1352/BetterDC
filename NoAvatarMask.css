@@ -1,88 +1,113 @@
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW foreignObject[mask^="url(#"] {
-  mask: none;
-  border-radius: 26%;
-  fill: transparent;
-}
-
-.avatarWrapperNormal-ahVUaC .avatarDecorationHint-3n-p6O,
-.avatarWrapperNormal-ahVUaC .avatarHint-k7pYop,
-.avatarHintInner-2HUAWj {
-  border-radius: 26% !important;
-  font-size: 9.6px;
-  font-weight: 600;
-}
-.avatarDecorationHint-3n-p6O {
-  height: 80px;
-  width: 80px;
-  left: 0px;
-  top: 0px;
-}
-
-.userProfileModalInner-3dx9L9 .avatar-3QF_VA,
-.userPopoutInner-nv9Y92 .avatarWrapper-eenWra {
-  transition: .35s ease;
-  background-color: transparent;
-  box-shadow: none;
-}
-
-.message-2CShn3 .avatar-2e8lTP {
-  transition: .35s ease;
-  border-radius: 26%;
-}
-.avatarDecorationHint-3n-p6O foreignObject[mask^="url(#"],
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
-.svg-lIB-lq.avatarHint-k7pYop foreignObject[mask^="url(#"],
-.container-YkUktl  .avatar-1EWyVD foreignObject[mask^="url(#"],
-.clickable-28SzVr .layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"],
-.userProfileInnerThemedWithBanner-25XGmz .bannerSVGWrapper-2CLfzN foreignObject[mask^="url(#"] {
-  transition: .35s ease;
-  border-radius: 26%;
-  mask: none;
-} 
-
+.selected-1-Z6gm .avatar-6qzftW foreignObject {
+    mask: none;
+    border-radius: 26%;
+    fill: transparent;
+  }
   
-.userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL foreignObject[mask^="url(#"],
-.userProfileModalInner-3dx9L9 .wrapper-3Un6-K.avatar-3QF_VA foreignObject[mask^="url(#"] {
-  mask: none;
-  border-radius: 26%;
-  animation-name: border-transition;
-  animation-duration: 0.35s;
-  animation-timing-function: ease;
-}
+  .avatarWrapperNormal-ahVUaC .avatarDecorationHint-3n-p6O,
+  .avatarWrapperNormal-ahVUaC .avatarHint-k7pYop,
+  .avatarHintInner-2HUAWj {
+    border-radius: 26% !important;
+    font-size: 9.6px;
+    font-weight: 600;
+  }
+  .avatarDecorationHint-3n-p6O {
+    height: 80px;
+    width: 80px;
+    left: 0px;
+    top: 0px;
+  }
   
-.container-YkUktl .avatar-1EWyVD foreignObject[mask^="url(#"],
-.layout-1qmrhw .wrapper-3Un6-K foreignObject[mask^="url(#"] {
-  border-radius: 50%;
-} 
-
-
-.avatarHintInner-2HUAWj circle,
-.userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL circle,
-.userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN circle,
-.userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL rect[mask^="url(#"],
-.userProfileModalInner-3dx9L9 .wrapper-3Un6-K.avatar-3QF_VA circle, 
-.userPopoutInner-nv9Y92 .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"],
-.userProfileModalInner-3dx9L9 .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"]  {
-  fill: transparent;
-  transition: .3s ease;
-}
-
-
-.userProfileModalInner-3dx9L9 .bannerSVGWrapper-2CLfzN circle,
-.userProfileInnerThemedWithBanner-25XGmz .avatarDecoration-2Wb1Au,
-
-.clickable-28SzVr .layout-1qmrhw .wrapper-3Un6-K rect[mask^="url(#"],
-.clickable-28SzVr .avatarDecoration-2Wb1Au,
-
-.selected-1-Z6gm .layout-1qmrhw .avatar-6qzftW rect[mask^="url(#"],
-.selected-1-Z6gm .layout-1qmrhw .avatarDecoration-2Wb1Au,
-
-.avatarHoverTarget-1zzfRL rect[mask^="url(#"],
-.userProfileModalInner-3dx9L9 rect[mask^="url(#"],
-.container-YkUktl  .avatar-1EWyVD rect[mask^="url(#"],
-.message-2CShn3 .avatarDecoration-34OC0G {
-  animation-name: Opacity;
-  animation-duration: .3s;
-  animation-timing-function: ease;
-  opacity: 0;
-}
+  
+  .userProfileModalInner-3dx9L9 .avatar-3QF_VA,
+  .userPopoutInner-nv9Y92 .avatarWrapper-eenWra,
+  .userPopoutInner-nv9Y92 .imageUploaderIconWrapper-14sdnH,
+  .accountProfileCard-lbN7n-:has(.avatar-3mTjvZ) .avatar-3mTjvZ {
+    transition: .35s ease;
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .message-24k8JL .avatar-2e8lTP,
+  .message-2CShn3 .avatar-2e8lTP {
+    transition: .35s ease;
+    border-radius: 26%;
+  }
+  
+  .accountProfileCard-lbN7n-:has(.avatar-3mTjvZ) .bannerSVGWrapper-2CLfzN foreignObject,
+  .accountProfileCard-lbN7n-:has(.avatar-3mTjvZ) .avatar-3mTjvZ foreignObject,
+  
+  .userPopoutInner-nv9Y92 .avatar-3mTjvZ foreignObject,
+  .userPopoutInner-nv9Y92 .avatarUploaderInner-p38nm2,
+  
+  .avatarDecorationHint-3n-p6O foreignObject,
+  .selected-1-Z6gm .avatar-6qzftW rect,
+  .svg-lIB-lq.avatarHint-k7pYop foreignObject,
+  .container-YkUktl  .avatar-1EWyVD foreignObject,
+  .clickable-28SzVr .wrapper-3Un6-K foreignObject,
+  .userProfileInnerThemedWithBanner-25XGmz .bannerSVGWrapper-2CLfzN foreignObject,
+  .interactive-26HRN_:focus-within, .interactive-26HRN_ .wrapper-3Un6-K foreignObject,
+  .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF .mask-1y0tyc.svg-1G_H_8 foreignObject,
+  .outer-2JOHae.interactive-2zD88a .mask-1y0tyc.svg-1G_H_8 foreignObject {
+    transition: .35s ease;
+    border-radius: 26%;
+    mask: none;
+  } 
+  
+    
+  .userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL foreignObject,
+  .userProfileModalInner-3dx9L9 .wrapper-3Un6-K.avatar-3QF_VA foreignObject {
+    mask: none;
+    border-radius: 26%;
+    animation-name: border-transition;
+    animation-duration: 0.35s;
+    animation-timing-function: ease;
+  }
+    
+  
+  .container-YkUktl .avatar-1EWyVD foreignObject, .wrapper-3Un6-K foreignObject,
+  .wrapper-3Un6-K foreignObject ,
+  .wrapper-3Un6-K rect {
+    border-radius: 50%;
+  } 
+  
+  
+  .avatarHintInner-2HUAWj circle,
+  
+  .userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL circle,
+  .userPopoutInner-nv9Y92 .bannerSVGWrapper-2CLfzN circle,
+  .userPopoutInner-nv9Y92 .avatarHoverTarget-1zzfRL rect,
+  .userPopoutInner-nv9Y92 .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"],
+  
+  .userProfileModalInner-3dx9L9 .wrapper-3Un6-K.avatar-3QF_VA circle, 
+  .userProfileModalInner-3dx9L9 .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"]  {
+    fill: transparent;
+    transition: .35s ease;
+  }
+  
+  
+  .accountProfileCard-lbN7n-:has(.avatar-3mTjvZ) .avatar-3mTjvZ rect,
+  .userPopoutInner-nv9Y92 .status-170GHg, .statusDotBackground-16Gr51 rect,
+  .userPopoutInner-nv9Y92 .imageUploaderIcon-2OHmFu,
+  
+  .interactive-26HRN_:focus-within, .interactive-26HRN_ .wrapper-3Un6-K rect,
+  .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF .wrapper-3Un6-K rect,
+  .outer-2JOHae.interactive-2zD88a .wrapper-3Un6-K rect,
+  
+  .userProfileModalInner-3dx9L9 .bannerSVGWrapper-2CLfzN circle,
+  .userProfileInnerThemedWithBanner-25XGmz .avatarDecoration-2Wb1Au,
+  
+  .clickable-28SzVr .wrapper-3Un6-K rect,
+  .clickable-28SzVr .avatarDecoration-2Wb1Au,
+  
+  .selected-1-Z6gm .avatar-6qzftW rect,
+  .selected-1-Z6gm .avatarDecoration-2Wb1Au,
+  
+  .avatarHoverTarget-1zzfRL rect,
+  .userProfileModalInner-3dx9L9 rect,
+  .container-YkUktl  .avatar-1EWyVD rect,
+  .message-2CShn3 .avatarDecoration-34OC0G {
+    animation-name: Opacity;
+    animation-duration: .35s;
+    animation-timing-function: ease;
+    opacity: 0;
+  }
