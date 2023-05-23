@@ -1,3 +1,6 @@
+/* Makes Avatars look cleaner on hover */
+
+
 .content-3u3YYB::after {
   content: "";
   position: absolute;
