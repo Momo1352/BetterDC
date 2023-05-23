@@ -91,7 +91,10 @@
   border: unset;
 }
 
-
+/* Fixes Sqared Online etc. badge on ClearVision in DirectMessages */
+.interactiveSelected-29CP8y rect {
+  fill: transparent !important;
+}
 
 /* Label */
 .tooltipPrimary-2466a2 {
@@ -1276,64 +1279,49 @@ display: none;
 
 /* Better Volume */
 .container-BetterVolume {
-    background-color: var(--main-background);
-    border: var(--main-border);
-    margin-left: 5px;
-    margin-right: 5px;
-  }
+  background-color: var(--main-background);
+  border: var(--main-border);
+  margin-left: 5px;
+  margin-right: 5px;
+}
   
   /* Better Formatting */
   .bf-toolbar::before {           
-    background-color: var(--background-overlay);;
-    border: var(--main-border);
-    border-radius: 10px;
-  }
-  
+  background-color: var(--background-overlay);;
+  border: var(--main-border);
+  border-radius: 10px;
+}
+
+
+
   /*  DateViewer  */
   #dv-mount {
-    background-color: var(--main-background);
-    bottom: 0px;
-    box-sizing: border-box;
-    display: flex;
-    height: 60px;
-    justify-content: center;
-    position: fixed;
-    width: 240px;
-    z-index: 1;
-    border-bottom-right-radius: var(--border-radius);
-    border-bottom-left-radius: var(--border-radius);
-    margin-bottom: var(--margin);
-    box-shadow: var(--main-box);
-  } #dv-main {
-    --gap: 0px;
-    border-top: 1px solid hsla(0, 0%, 25%, 0.296);
-    background: transparent;
-    box-sizing: border-box;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    line-height: 20px;
-    justify-content: center;
-    text-align: center;
-    text-transform: uppercase;
-    width: calc(100% - var(--gap) * 1);
-  } #dv-main .dv-date {
-    font-size: small;
-    opacity: .6;
-  } #dv-main .dv-weekday { 
-    display: none;
-  } .theme-light #dv-mount {
-    background-color: #ffffff00;
-  } .theme-light #dv-main {
-    border-top: 1px solid #e6e6e6;
-    color: #ffffff00;
-  }
+  height: 60px !important;
+  width: 240px;
+  box-sizing: border-box;
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  background-color: var(--main-background);
+  border-bottom-right-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  margin-bottom: var(--margin);
+  box-shadow: var(--main-box);
+} #dv-main {
+  --gap: 0px;
+  border-top: var(--main-border);
+  width: calc(100% - var(--gap) * 1);
+} #dv-main .dv-date {
+  font-size: small;
+  opacity: .6;
+} #dv-main .dv-weekday { 
+  display: none;
+} 
 
 /* Show All Connections icons */
   .connectionIcon-888F4s {
-    width: 110%;
-  }
+  width: 110%;
+}
 
   
 /* Change Text in TopLeft corner */
