@@ -4,6 +4,7 @@
 /* Pinged Messeges */
 .messageGroupWrapper-1jf_7C .messageGroupCozy-3v_RqN:hover .avatar-2e8lTP {
   border-radius: 26%;
+  transition: .35s ease;
 }
 
 /* Section "Pinged" in Inbox */
@@ -24,6 +25,7 @@
 /* Section "ForYou" in Inbox, Avatar */
 .row-7jGzPR:hover .avatar-9c8Ckk {
   border-radius: 26%;
+  transition: .35s ease;
 }
 /* Section "ForYou" in Inbox, MaskIcon, Background */
 .row-7jGzPR:hover .maskIcon-9WiX-d,
@@ -158,17 +160,24 @@
   border-radius: 50%;
 }
 /* DirectMessages Avatar mask */
-.interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject  {
+.interactive-26HRN_:hover .wrapper-3Un6-K foreignObject  {
   mask: none;
   border-radius: 26%;
   transition: .3s ease;
 }
 /* Online etc. DirectMessages */
-.interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K rect  {
+.interactive-26HRN_:hover .wrapper-3Un6-K rect  {
   animation-name: Opacity;
   animation-duration: .3s;
   animation-timing-function: ease;
   opacity: 0;
+}
+/* Selected Direct Messages Chat */
+.interactiveSelected-29CP8y rect,
+.interactiveSelected-29CP8y .mask-1y0tyc.svg-1G_H_8 foreignObject {
+  mask: none;
+  fill: transparent;
+  border-radius: 26%;
 }
 
 /* Online Friends Avatar mask */
@@ -206,12 +215,12 @@
 }
 
 /* Focused Member in Member list */
-.selected-1-Z6gm .avatar-6qzftW foreignObject {
+.selected-1-Z6gm > .avatar-6qzftW foreignObject {
   mask: none;
   border-radius: 26%;
   fill: transparent;
 }
-.selected-1-Z6gm .avatar-6qzftW rect {
+.selected-1-Z6gm > .avatar-6qzftW rect {
   opacity: 0;
 }
 
@@ -398,6 +407,7 @@
 }
 
 
+
 /* ----------------------------------------------------------------------------------- */
 
 .content-3u3YYB::after {
@@ -430,11 +440,15 @@
   border-radius: 50%;
 } 
 
+
+.interactiveSelected-29CP8y rect,
+.interactiveSelected-29CP8y .mask-1y0tyc.svg-1G_H_8 foreignObject,
 .selected-1-Z6gm .avatar-6qzftW foreignObject {
   mask: none;
   fill: transparent;
   border-radius: 26%;
 }
+
 
 .userProfileModalInner-3dx9L9:hover .avatar-3QF_VA,
 .userPopoutInner-nv9Y92:hover .avatarWrapper-eenWra,
@@ -478,7 +492,7 @@
 .container-YkUktl:hover  .avatar-1EWyVD foreignObject,
 .clickable-28SzVr:hover .wrapper-3Un6-K foreignObject,
 .userProfileInnerThemedWithBanner-25XGmz:hover .bannerSVGWrapper-2CLfzN foreignObject,
-.interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
+.interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .mask-1y0tyc.svg-1G_H_8 foreignObject,
 .outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject {
   transition: .35s ease;
@@ -521,7 +535,7 @@
 .userPopoutInner-nv9Y92:hover .status-170GHg, .statusDotBackground-16Gr51 rect,
 .userPopoutInner-nv9Y92:hover .imageUploaderIcon-2OHmFu,
 
-.interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K rect,
+.interactive-26HRN_:hover .wrapper-3Un6-K rect,
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .wrapper-3Un6-K rect,
 .outer-2JOHae.interactive-2zD88a:hover .wrapper-3Un6-K rect,
 

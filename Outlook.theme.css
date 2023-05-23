@@ -35,7 +35,8 @@
   border-radius: 10px !important;
 } .container-YkUktl > .flex-2S1XBF > button:hover, #app-mount .avatarWrapper-1B9FTW:hover {
   border-radius: 10px;
-} /* Profile Avatar button */
+}
+ /* Profile Avatar button */
 .avatarWrapper-1B9FTW {
   position: fixed;
   left: 82px;
