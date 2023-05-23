@@ -28,11 +28,15 @@
     border-radius: 50%;
   } 
   
+  
+  .interactiveSelected-29CP8y rect,
+  .interactiveSelected-29CP8y .mask-1y0tyc.svg-1G_H_8 foreignObject,
   .selected-1-Z6gm .avatar-6qzftW foreignObject {
     mask: none;
     fill: transparent;
     border-radius: 26%;
   }
+  
   
   .userProfileModalInner-3dx9L9:hover .avatar-3QF_VA,
   .userPopoutInner-nv9Y92:hover .avatarWrapper-eenWra,
@@ -42,8 +46,8 @@
     background-color: transparent;
     box-shadow: none;
   }
-
-
+  
+  
   
   .row-7jGzPR:hover .avatar-9c8Ckk,
   .messageContainer-3VTXBC:hover .avatar-2e8lTP,
@@ -76,7 +80,7 @@
   .container-YkUktl:hover  .avatar-1EWyVD foreignObject,
   .clickable-28SzVr:hover .wrapper-3Un6-K foreignObject,
   .userProfileInnerThemedWithBanner-25XGmz:hover .bannerSVGWrapper-2CLfzN foreignObject,
-  .interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
+  .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
   .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .mask-1y0tyc.svg-1G_H_8 foreignObject,
   .outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject {
     transition: .35s ease;
@@ -108,10 +112,10 @@
     fill: transparent;
   }
   
-
+  
   .messageContainer-8dSNjf:hover .avatarDecoration-34OC0G,
   .messageContainer-3VTXBC:hover .avatarDecoration-34OC0G, 
-
+  
   .row-7jGzPR:hover .maskIcon-9WiX-d,
   .row-7jGzPR:hover .maskBackground-3UP7z9, 
   
@@ -119,7 +123,7 @@
   .userPopoutInner-nv9Y92:hover .status-170GHg, .statusDotBackground-16Gr51 rect,
   .userPopoutInner-nv9Y92:hover .imageUploaderIcon-2OHmFu,
   
-  .interactive-26HRN_:focus-within, .interactive-26HRN_:hover .wrapper-3Un6-K rect,
+  .interactive-26HRN_:hover .wrapper-3Un6-K rect,
   .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .wrapper-3Un6-K rect,
   .outer-2JOHae.interactive-2zD88a:hover .wrapper-3Un6-K rect,
   
