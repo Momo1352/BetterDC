@@ -20,7 +20,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Oxanium:wght@400&display=swap);
 
-
+/* ProfilesBanners in DirectMessages */
+.profilePanel-2VBkh8 {
+  margin: var(--margin);
+  margin-left: unset;
+} 
 
 /* SETTINGS */
 :root {
@@ -231,9 +235,10 @@ height: 23px;}
 .gameNightButton-3N8p1F {
   display: none;
 }
-/* Makes invissibleTyping button invisible but clickable */
-.invisible-typing-button {
+/* Makes invissibleTyping button invisible when active */
+.invisible-typing-button:has(.disabled-stroke-through) {
   opacity: 0;
+  order: -1;
 }
 
 /* Own user Prifole bottom left */
