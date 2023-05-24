@@ -64,11 +64,6 @@
   --background-repeat: no-repeat; /* app background repeat [default: no-repeat] */
   --background-attachment: fixed; /* app background attachment [default: fixed] */
   --background-brightness: 100%; /* app background brightness (< 100% for darken, > 100% for lighten) [default: 100%] */
-  --background-contrast: 100%; /* app background contrast [default: 100%] */
-  --background-saturation: 100%; /* app background saturation [default: 100%] */
-  --background-invert: 0%; /* app background invert (0 - 100%)  [default: 0%] */
-  --background-grayscale: 0%; /* app background grayscale ( 0 - 100%) [default: 0%] */
-  --background-sepia: 0%; /* app background sepia (0 - 100%) [default: 0%] */
   --background-blur: 0px; /* app background blur [default: 0px] */
 
   /* STATUS COLORS */
@@ -88,6 +83,41 @@
   --home-icon: url(https://clearvision.github.io/icons/discord.svg);
   --home-position: center; /* home button icon position [default: center] */
   --home-size: 42px; /* home button icon size [default: 40px] */ 
+
+  /* CHANNEL COLORS */
+  --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
+  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
+  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
+  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
+  
+  /* MODAL BACKDROP */
+  --backdrop-overlay: rgba(5, 5, 5, 0.689); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
+  --backdrop-image: url(https://img8.hotnessrater.com/6691055/corinna-kopf-nude.jpg?w=4000&h=6000); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
+  --backdrop-position: center; /* modal backdrop position [default: var(--background-position)] */
+  --backdrop-size: 100%; /* modal backdrop size [default: var(--background-size)] */
+  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
+  --backdrop-brightness: 90%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
+  --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
+  
+  /* USER MODAL BACKGROUND */
+  --user-modal-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg); /* app background image (link must be HTTPS) [default: var(--background-image)] */
+  --user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
+  --user-modal-size: 50%; /* user modal background size [default: var(--background-size)] */
+  --user-modal-repeat: repeat; /* user modal background repeat [default: var(--background-repeat)] */
+  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
+  
+  /* THEME BD COLORS */
+  --bd-white: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
+  --bd-white-hover: rgba(rgba(31, 27, 255, 0.412)); /* betterdiscord hover color [default: var(--hover-color)] */
+  --bd-white-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
+
+  /* USER POPOUT BACKGROUND */
+  --user-popout-image: url(); /* https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg */
+  --user-popout-position: center; /* user popout background position [default: var(--background-position)] */
+  --user-popout-size: cover; /* user popout background size [default: var(--background-size)] */
+  --user-popout-repeat: no-repeat; /* user popout background repeat [default: var(--background-repeat)] */
+  --user-popout-blur: calc(var(--background-blur) + 2px); /* user popout background blur [default: calc(var(--background-blur) + 3px)] */
+  --user-popout-overlay: rgb(62, 225, 13); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 }
 
 
@@ -1349,44 +1379,4 @@ display: none;
   margin-bottom: 10px;
 }
 
-:root {
-  /* CHANNEL COLORS */
-  --channel-unread: var(--main-color); /* Unread Server channel color. [default:  var(--main-color)] THIS OVERRIDES YOUR MAIN COLOR*/
-  --channel-color: rgba(255, 255, 255, 0.3); /*Read Server channel color  [default: rgba(255,255,255,0.3);]*/
-  --channel-text-selected: #fff; /* Selected channel text color, CV default is #fff */
-  --muted-color: rgba(255, 255, 255, 0.1); /*Muted channel color  [default: rgba(255,255,255,0.1);]*/
 
-  /* MODAL BACKDROP */
-  --backdrop-overlay: rgba(5, 5, 5, 0); /* modal backdrop overlay color/gradient [default: rgba(0, 0, 0, 0.8)] */
-  --backdrop-image: url(); /* modal backdrop image (link must be HTTPS) [default: var(--background-image)] */
-  --backdrop-position: center left; /* modal backdrop position [default: var(--background-position)] */
-  --backdrop-size: cover; /* modal backdrop size [default: var(--background-size)] */
-  --backdrop-repeat: var(--background-repeat); /* modal backdrop repeat [default: var(--background-repeat)] */
-  --backdrop-attachment: var(--background-attachment); /* modal backdrop attachment [default: var(--background-attachment)] */
-  --backdrop-brightness: 90%; /* modal backdrop brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
-  --backdrop-contrast: 100%; /* modal backdrop contrast [default: var(--background-contrast)] */
-  --backdrop-saturation: 100%; /* modal backdrop saturation [default: var(--background-saturation)] */
-  --backdrop-invert: 0%; /* modal backdrop invert (0 - 100%)  [default: var(--background-invert)] */
-  --backdrop-grayscale: var(--background-grayscale); /* modal backdrop grayscale ( 0 - 100%) [default: var(--background-grayscale)] */
-  --backdrop-sepia: var(--background-sepia); /* modal backdrop sepia (0 - 100%) [default: var(--background-sepia)] */
-  --backdrop-blur: var(--background-blur); /* modal backdrop blur [default: var(--background-blur)] */
-
-  /* USER MODAL BACKGROUND */
-  --user-modal-image: url(https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg); /* app background image (link must be HTTPS) [default: var(--background-image)] */
-  --user-modal-position: var(--background-position); /* user modal background position [default: var(--background-position)] */
-  --user-modal-size: var(--background-size); /* user modal background size [default: var(--background-size)] */
-  --user-modal-repeat: none; /* user modal background repeat [default: var(--background-repeat)] */
-  --user-modal-attachment: var(--background-attachment); /* user modal background attachment [default: var(--background-attachment)] */
-  --user-modal-brightness: var(--background-brightness); /* user modal background brightness (< 100% for darken, > 100% for lighten) [default: var(--background-brightness)] */
-  --user-modal-contrast: var(--background-contrast); /* user modal background contrast [default: var(--background-contrast)] */
-  --user-modal-saturation: var(--background-saturation); /* user modal background saturation [default: var(--background-saturation)] */
-  --user-modal-invert: var(--background-invert); /* user modal background invert (0 - 100%) [default: var(--background-invert)] */
-  --user-modal-grayscale: var(--background-grayscale); /* user modal background grayscale (0 - 100%) [default: var(--background-grayscale)] */
-  --user-modal-sepia: var(--background-sepia); /* user modal background sepia (0 - 100%) [default: var(--background-sepia)] */
-  --user-modal-blur: calc(var(--background-blur) + 3px); /* user modal background blur [default: calc(var(--background-blur) + 3px)] */
-
-  /* THEME BD COLORS */
-  --bd-white: var(--main-color); /* betterdiscord main color [default: var(--main-color)] */
-  --bd-white-hover: rgba(rgba(31, 27, 255, 0.412)); /* betterdiscord hover color [default: var(--hover-color)] */
-  --bd-white-active: var(--hover-color); /* betterdiscord active color [default: var(--hover-color)] */
-}
