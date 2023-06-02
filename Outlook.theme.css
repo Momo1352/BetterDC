@@ -26,6 +26,28 @@
   --popout-color: rgba(22, 20, 20, 0.303);
 }
 
+
+/* Setting left Scroller */
+body #app-mount .sidebar-nqHbhN, body #app-mount .layer-86YKbF ~ .layer-86YKbF .sidebar-nqHbhN {
+  padding: 20px 8px 40px 8px !important;
+  width: 260px !important;
+} .sidebar-nqHbhN .item-2GWPIy {
+  font-size: 15px;
+}
+
+/* Server Icons Background */
+.blobContainer-ikKyFs:hover {
+  background-color: transparent;
+} 
+/* Server Icons */
+.listItem-3SmSlK .wrapper-2PSQCG .icon-3AqZ2e {
+  scale: 1 !important;
+  border-radius: 20px !important;
+} .listItem-3SmSlK:hover .wrapper-2PSQCG .icon-3AqZ2e {
+  border-radius:  10px !important;
+  transition: border-radius .3s ease;
+}
+
 /* --- Move Mute and Settings buttons to default --- */
 /* Mute, Settings Button */
 .container-YkUktl > .flex-2S1XBF {
@@ -109,36 +131,84 @@
 
 /* Scrollbars */
 .scroller-1ox3I2::-webkit-scrollbar {
-  display: none;  /* Channel List */
-}
+  display: none;  
+} /* Channel List */
 .scroller-3X7KbA::-webkit-scrollbar {
-  display: none; /* Server List */
-}
+  display: none; 
+} /* Server List */
 .members-3WRCEx::-webkit-scrollbar {
-  display: none; /* Member List */
-}
+  display: none; 
+} /* Member List */
 .contentRegionScroller-2_GT_N::-webkit-scrollbar {
   display: none; /* Setting Main */
-}
+} /* Active Friends List */
 .scroller-hE2gWq::-webkit-scrollbar {
-  display: none; /* Active Friends List */
-}
+  display: none; 
+} /* Right Click Menus */
 .scroller-nxCRu_::-webkit-scrollbar { 
-  width: 8px !important;   /* Right Click Menus */
+  width: 8px !important;   
   color: transparent;
-}
+} /* Find or start Conversation */
 .scroller-2qwVWY::-webkit-scrollbar {     
-  width: 14px;   /* Find or start Conversation */
-}
-.modalContent-xzlaTm::-webkit-scrollbar {   /* ban Popout */
+  width: 14px;   
+} /* ban Popout */
+.modalContent-xzlaTm::-webkit-scrollbar {   
+  display: none;
+} /* right click User Profile */
+.infoScroller-1QMpon::-webkit-scrollbar {    
+  display: none;
+} /* Discover public Server */
+.scroller-3j5xK2::-webkit-scrollbar {       
+  display: none;
+} /* Settings left Scroller */
+.sidebarRegionScroller-FXiQOh::-webkit-scrollbar {
   display: none;
 }
-.infoScroller-1QMpon::-webkit-scrollbar {    /* right click User Profile */
+
+
+
+/* "Coloured Folder Icons" */
+.closedFolderIconWrapper-3tRb2d {
   display: none;
 }
-.scroller-3j5xK2::-webkit-scrollbar {       /* Discover public Server */
-  display: none;
+.folderIconWrapper-1oRIZr:not([style=""])::before {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: inherit;
+  -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat !important;
+  mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat !important;
+  transform: scale(1.3335);
+  filter: brightness(1.5) saturate(1.5);
 }
+
+/* Floating Folder */
+.wrapper-38slSD:active {
+  -webkit-transform: unset;
+  transform: none;
+}
+[id^="folder-items-"] {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  overflow-y: auto;
+  max-height: unset;
+  margin: auto auto auto auto;
+  padding-top: 0;
+  border-radius: 8px;
+  background: transparent;
+  -webkit-box-shadow: transparent !important;
+  box-shadow: transparent !important;
+}
+
+
 
 
   /*  DateViewer  */
@@ -147,7 +217,7 @@
     bottom: 0px;
     box-sizing: border-box;
     display: flex;
-    height: 60px;
+    height: 60px !important;
     justify-content: center;
     position: fixed;
     width: 240px;
@@ -175,30 +245,4 @@
   } .theme-light #dv-main {
     border-top: 1px solid #e6e6e6;
     color: #ffffff00;
-  }
-
-
-  /* Floating Folder */
-.wrapper-38slSD:active {
-  -webkit-transform: unset;
-  transform: none;
 }
-
-[id^="folder-items-"] {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 99;
-  overflow-y: auto;
-  max-height: calc(100vh - 72px);
-  margin: auto auto auto calc(72px + 8px);
-  padding-top: 8px;
-  border-radius: 8px;
-  background: var(--background-floating);
-  -webkit-box-shadow: var(--elevation-high);
-  box-shadow: var(--elevation-high);
-}
-
-
-
-

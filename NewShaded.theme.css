@@ -8,7 +8,7 @@
 
 /* Credits to ClearVision for making the original theme. */
 
-/* setTimeout(() => { debugger }, 3000) /* 
+/* setTimeout(() => { debugger }, 3000) */
 
 
 
@@ -21,11 +21,11 @@
 @import url(https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Oxanium:wght@400&display=swap);
 
-/* ProfilesBanners in DirectMessages */
-.profilePanel-2VBkh8 {
-  margin: var(--margin);
-  margin-left: unset;
-} 
+
+
+.mention-3XBnnZ {
+  margin: unset;
+}
 
 /* SETTINGS */
 :root {
@@ -46,15 +46,16 @@
   --url-color: var(--main-color); /*The color of url links [default: var(--main-color)]*/
 
   /* Custom */
-  --main-background: rgba(0, 0, 0, 0.648); /* All Collums backgrounds rgba(0, 0, 0, 0.695);*/
-  --background-overlay: rgba(23, 25, 46, 0.718); /* rgba(31, 33, 54, 0.821); */
-  --popout-color: rgba(0, 0, 0, 0.959); /* Every Popouts Background rgba(0, 0, 0, 0.959);*/
+  --background-overlay: #1C1E33; /* #1C1E33 */
+  --main-background: #0A0B12; /* All Collums backgrounds #0A0B12 */
+  --popout-color: #05050c; /* Every Popouts Background rgba(0, 0, 0, 0.959);*/
 
-  --main-border: 1px solid rgba(128, 128, 128, 0.153); /* Main Border */
-  --gray-hover: rgba(35, 34, 45, 0.05);  
-  --main-box:  0 0 0px 0px var(--main-color);
+  --main-border: 1px solid #1c1c23; /* Main Border */
+  --gray-hover: #1e1e263a;  
+  --main-box: 0 0 0px 0px var(--main-color);
   --border-radius: 11px;
-  --margin: 11px;
+  --margin: 10px;
+
 
   /* APP BACKGROUND */
   --background-image: url(); /* https://probot.media/oKJSMpatJn.jpg */
@@ -120,6 +121,17 @@
   --user-popout-overlay: rgb(62, 225, 13); /* user popout overlay color [default: rgba(0, 0, 0, .6)] */
 }
 
+
+/* ProfilesBanners in DirectMessages */
+.profilePanel-2VBkh8 {
+  margin: var(--margin);
+  margin-left: unset;
+} 
+
+/* Server banner at the top of Channels */
+.container-1NXEtd .bannerImage-ubW8K- {
+  transform: scale(1.13) !important;
+}
 
 /* Fixes bugged out avatarUploader in Settings */
 .avatarUploaderInner-p38nm2 {
@@ -431,10 +443,12 @@ width: auto;
 .banReasonOtherClickable-8EKPlQ {
   background-color: var(--popout-color);
   border: var(--main-border);
-} .theme-dark .modal-3Hrb0S, .theme-dark .root-1CAIjD {
-  background-color: var(--popout-color);
+} 
+.modal-3Hrb0S:has(h2), 
+.root-1CAIjD:has(h2) {
+  background-color: var(--popout-color) !important;
   border: var(--main-border);
-  border-radius: 10px;
+  border-radius: var(--border-radius);
 }
 .container-qBnZJg.root-1CAIjD.rootWithShadow-2hdL2J {
   border: none;
@@ -784,7 +798,7 @@ path[d="M21.707 20.293L16.314 14.9C17.403 13.504 18 11.799 18 10C18 7.863 17.167
 
 /* Changes user Roll popout when quickAssingning Rolls thrue --UserPopout-- */
 .container-2kTWmC {
-  background: rgba(0, 0, 0, 0.959);
+  background: var(--popout-color);
   border-radius: 7px;
   margin: none;
 }
@@ -906,7 +920,7 @@ display: none;
   border-top-left-radius: var(--border-radius)!important;
   margin-right: var(--margin);
   margin-top: var(--margin);  
-  margin-bottom: calc(var(--margin) + 60px);
+  margin-bottom: calc(var(--margin) + 60px); /* + 60px with DateViewer */
   box-shadow: var(--main-box);
 }
 .sidebar-1tnWFu {                              /*  Channel List */
@@ -924,33 +938,6 @@ display: none;
 } .chat-25x62K:before {
   display: none;
 }
-
-.theme-dark.container-ZMc96U.themed-Hp1KC_,      /* Toolbar at the top of Friends Menu */
-.title-31SJ6t.container-ZMc96U.themed-Hp1KC_ {   /* Toolbar at the top of Chat*/
-  height: 48px;
-  width: auto;
-  background: var(--main-background);
-  border-radius: calc(var(--border-radius) - 3px);
-  margin-left: var(--margin) !important;
-  margin-right: var(--margin);
-  margin-top: var(--margin);
-  box-shadow: var(--main-box);
-}
-/* Toolbar above Support Chats */
-.container-ZMc96U.themed-Hp1KC_:has([d^="M7 12.001C7 10.8964 6.10457 10.001 5 10.001C3.89543 10.001 3 10.8964 3 12.001C3 13.1055 3.89543 14.001 5 14.001C6.10457 14.001 7 13.1055 7 12.001ZM14 12.001C14 10.8964 13.1046 10.001 12 10.001C10.8954 10.001 10 10.8964 10 12.001C10 13.1055 10.8954 14.001 12 14.001C13.1046 14.001 14 13.1055 14 12.001ZM19 10.001C20.1046 10.001 21 10.8964 21 12.001C21 13.1055 20.1046 14.001 19 14.001C17.8954 14.001 17 13.1055 17 12.001C17 10.8964 17.8954 10.001 19 10.001Z"]),
-/* Toolbar above every Chat */
-.container-ZMc96U.themed-Hp1KC_[aria-label="Kanalüberschrift"] {      
-  border-top-right-radius: calc(var(--border-radius) - 3px);
-  border-top-left-radius: calc(var(--border-radius) - 3px);
-  background-color: var(--main-background);
-  border-bottom: var(--main-border);
-  box-shadow: var(--main-box);
-  margin: var(--margin);
-  margin-bottom: unset;
-  margin-left: unset;
-  width: auto;
-  height: 48px;
-} 
 /* Channel Chat open */
 .chatContent-3KubbW[role="complementary"] {
   margin-top: unset;
@@ -958,19 +945,32 @@ display: none;
   border-top-right-radius: unset !important;
   border-top-left-radius: unset !important;
 }
-/* Toolbar to the top of Stream */
-.theme-dark.container-ZMc96U.transparent-1lUmft { 
-  height: 48px;
-  background: transparent;
-  border-radius: calc(var(--border-radius) - 3px);
-  margin: 10px;
+
+/* Toolbar above */
+.container-ZMc96U {
+  background: var(--main-background) !important;
+  margin: var(--margin);
   margin-bottom: unset;
-  border: var(--main-border);
-  box-shadow: var(--main-box);
-  width: auto;
-  background-color: var(--main-background);
+  border-radius: calc(var(--border-radius) - 3px);
+  max-width: calc(100% - var(--margin)*2);
+  box-shadow: var(--main-box) !important;
+}
+/* Toobar above Channel Chat and Support Chat */
+.container-ZMc96U.themed-Hp1KC_:has([aria-label="Schließen"]) {
+  border-bottom-right-radius: unset;
+  border-bottom-left-radius: unset;
+  border-bottom: var(--main-border);
+  margin-bottom: unset;
+  margin-left: unset;
+  margin-right: unset !important;
+  max-width: calc(100% - var(--margin)) !important;
 }
 
+
+/* Toolbar to the top of Stream */
+.container-ZMc96U.transparent-1lUmft { 
+  border: var(--main-border);
+}
 
 /* Go Live button */
 .activityPanel-9icbyU .actions-zk2vB_ {
@@ -1044,15 +1044,21 @@ display: none;
   border-radius: 15px;
 }
 
- /* Hover over Messages in Chat */
-.message-2CShn3.cozyMessage-1DWF9U.groupStart-3Mlgv1.wrapper-30-Nkg.cozy-VmLDNB.zalgo-26OfGz:hover, .message-2CShn3:hover, .message-2CShn3.selected-2LX7Jy, .mouse-mode.full-motion .message-2CShn3:hover {                         
-  background-color: rgba(27, 27, 41, 0.177);
+
+/* Hover over Messages in Chat */
+ .mouse-mode.full-motion .message-2CShn3:hover,
+ .message-2CShn3.cozyMessage-1DWF9U:hover, 
+ .message-2CShn3:hover {                         
+  background-color: rgba(27, 27, 41, 0);
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
-} .mentioned-Tre-dv {
+}  .mentioned-Tre-dv {
   border-bottom-right-radius: 5px;
   border-top-right-radius: 5px;
 }
+
+
+
 /* Quick Acces Top right when hovering Chat Messages */
  .wrapper-2vIMkT .button-3bklZh:hover, .wrapper-2vIMkT .button-3bklZh.selected-69H4ua:hover {
   background-color: var(--hover-color); 
@@ -1106,7 +1112,7 @@ display: none;
   margin-right: 10px;
 } .callContainer-HtHELf {                                 /* Background while watching Stream */
   background-color: var(--main-background);
-  border-radius: var(--border-radius);
+  border-radius: var(--border-radius) !important;
   margin: var(--margin);
 } .chatIcon-R5MUNn svg, .unreadCount-eHeIkt {             /*  Chat icon top right while watching Stream  */ 
   margin-top: 10px;
@@ -1128,21 +1134,14 @@ display: none;
   border: var(--main-border);
 } .input-3r5zZY {                                       
   max-height: 35px;
-} /* Quick Switcher Button */
+} /* Quick Switcher Button (Find or start Conversation) */
 .searchBar-3TnChZ {
+  background-color: transparent;
   box-shadow: none;
   height: fit-content;
-  border: 1px solid transparent;
   margin: 5px;
   top: 5px;
-  background-color: transparent;
-  min-width: fit-content;
-} .searchBar-3TnChZ:hover {
-  border: var(--main-border);
-  border-radius: 10px;
-  margin: 5px;
-  top: 5px;
-} 
+}
 
 /* Nitro and Friends button in direct Messages */
 .interactive-26HRN_.interactive-iyXY_x.linkButton-2NshQj,
@@ -1230,23 +1229,23 @@ display: none;
 
 /* "Coloured Folder Icons" */
 .closedFolderIconWrapper-3tRb2d {
-    display: none;
+  display: none;
 }
 .folderIconWrapper-1oRIZr:not([style=""])::before {
-    position: absolute;
-    content: "";
-    width: 18px;
-    height: 18px;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    background-color: inherit;
-    -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
-    mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
-    transform: scale(1.3335);
-    filter: brightness(1.5) saturate(1.5);
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 18px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background-color: inherit;
+  -webkit-mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+  mask: url(https://capnkitten.github.io/BetterDiscord/Themes/Material-Discord/files/icons/solid/folder.svg) no-repeat;
+  transform: scale(1.3335);
+  filter: brightness(1.5) saturate(1.5);
 }
 /* Remove Clear Visions Folder Background */
 .expandedFolderBackground-1kSAf6 {
