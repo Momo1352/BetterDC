@@ -1,0 +1,60 @@
+img[src*="749145272910610462"] {
+    z-index: 23;
+    opacity: 0;
+}
+.memberInner--L4X2b.layout-1qmrhw:has(.avatarStack-3Bjmsl) .avatarStack-3Bjmsl:has([src*="749145272910610462"])::after {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    z-index: -1;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.userPopoutInner-nv9Y92:has(.avatarStack-3Bjmsl) .avatarStack-3Bjmsl:has([src*="749145272910610462"])::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    z-index: -1;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.avatar-3QF_VA:has([src*="749145272910610462"])::after {
+    content: "";
+    position: absolute;
+    margin-top: calc(4px - 0.125rem);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    z-index: -1;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.contents-2MsGLg:has(img[src*="749145272910610462"])::after {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 16px;
+    margin-top: calc(4px - 0.125rem);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    z-index: 22;
+    overflow: hidden;
+    cursor: pointer;
+    background-image: url("https://i.ebayimg.com/images/g/97cAAOSwlAdiwz1I/s-l1600.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
