@@ -2,6 +2,19 @@ img[src*="749145272910610462"] {
     z-index: 23;
     opacity: 0;
 }
+
+.wrapper-3kah-n:hover:has(img[src*="870045115169771531"])::after {
+    border-radius: 15px;
+    transition: .25s ease;
+}
+.wrapper-3kah-n:not(:hover):has(img[src*="870045115169771531"])::after {
+    border-radius: 50%;
+    transition: .25s ease;
+}
+.wrapper-2PSQCG:has(img[src*="870045115169771531"]) .lowerBadge-3j0ZAg {
+    box-shadow:  0 0 0 3px var(--background-tertiary);
+    border-radius: 50%;
+}
 .memberInner--L4X2b.layout-1qmrhw:has(.avatarStack-3Bjmsl) .avatarStack-3Bjmsl:has([src*="749145272910610462"])::after {
     content: "";
     position: absolute;
