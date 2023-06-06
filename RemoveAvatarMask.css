@@ -31,6 +31,13 @@
   border-radius: 50%;
 } 
 
+.messageContainer-3VTXBC:not(:hover) .avatar-2e8lTP,
+.messageContainer-8dSNjf:not(:hover) .avatar-2e8lTP,
+.messageGroupWrapper-1jf_7C .messageGroupCozy-3v_RqN:not(:hover) .avatar-2e8lTP,
+.message-2CShn3:not(:hover) .avatar-2e8lTP {
+  transition: .25s ease;
+  border-radius: 50%;
+}
 
 .interactiveSelected-29CP8y rect,
 .interactiveSelected-29CP8y .mask-1y0tyc.svg-1G_H_8 foreignObject,
