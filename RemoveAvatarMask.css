@@ -89,7 +89,7 @@
 .svg-lIB-lq.avatarHint-k7pYop foreignObject,
 .container-YkUktl:hover  .avatar-1EWyVD foreignObject,
 .clickable-28SzVr:hover .wrapper-3Un6-K foreignObject,
-.userProfileInnerThemedWithBanner-25XGmz:hover .bannerSVGWrapper-2CLfzN foreignObject,
+.userProfileInner-1ngKnf:hover .bannerSVGWrapper-2CLfzN foreignObject,
 .interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
 .peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .mask-1y0tyc.svg-1G_H_8 foreignObject,
 .outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject {
@@ -122,6 +122,7 @@
   fill: transparent;
 }
 
+.userProfileInnerThemedPremiumWithoutBanner-lZ9inp:hover .avatarDecoration-2Wb1Au,
 
 .messageContainer-8dSNjf:hover .avatarDecoration-34OC0G,
 .messageContainer-3VTXBC:hover .avatarDecoration-34OC0G, 
@@ -139,12 +140,14 @@
 
 .userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
 .userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
+.userPopoutInner-nv9Y92:hover .avatarDecoration-2Wb1Au,
 
 .clickable-28SzVr:hover .wrapper-3Un6-K rect,
 .clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
 
 .selected-1-Z6gm .avatar-6qzftW rect,
 .selected-1-Z6gm .avatarDecoration-2Wb1Au,
+
 
 .avatarHoverTarget-1zzfRL:hover rect,
 .userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA rect,
