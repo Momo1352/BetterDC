@@ -1,13 +1,7 @@
 /* Makes Avatars look cleaner on hover */
 
 
-.content-3u3YYB::after {
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  z-index: 99;
-}
+
 
 .avatarDecorationHint-3n-p6O {
   height: 80px;
