@@ -1,54 +1,148 @@
+
 $UserID: "416353640073134082";
 
-$repeatedSelector: "li:has([src*='#{$UserID}']):not(:has([class*=replyAvatar][src*='#{$UserID}']))";
+li:has([src*=$UserID]) {
+  :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+  .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+  code, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+    margin-left: auto !important;
+  }
 
-@for $i from 1 through 6 {
-  #{$repeatedSelector} {
-    & + #{if($i > 1, ("> " * $i), "")} :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U > .contents-2MsGLg,
-    .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1) > .contents-2MsGLg > .markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+  + li {
+    :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+    .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
       margin-left: auto !important;
     }
-  }
-}
 
+    + li {
+      :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+      .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+      code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+        margin-left: auto !important;
+      }
 
-@for $i from 1 through 7 {
-  #{$repeatedSelector} {
-    & + #{if($i > 1, ("> " * $i), "")} > div > div > span:has([id*='-timestamp']) {
+      + li {
+        :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+        .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+        code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+          margin-left: auto !important;
+        }
+
+        + li {
+          :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+          .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+          code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+            margin-left: auto !important;
+          }
+
+          + li {
+            :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+            .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+            code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+              margin-left: auto !important;
+            }
+
+            + li {
+              :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+              .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+              code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+                margin-left: auto !important;
+              }
+
+              + li {
+                :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+                .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+                code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]), + li :where(.groupStart-3Mlgv1.cozyMessage-1DWF9U>.contents-2MsGLg,
+                .cozyMessage-1DWF9U:not(.groupStart-3Mlgv1)>.contents-2MsGLg>.markup-eYLPri:not(:empty, .searchResultsWrap-5RVOkx *),
+                code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]) {
+                  margin-left: auto !important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > div > div > span:has([id*=timestamp]) {
       left: calc(100% - 8em) !important;
+    }
+
+    + li {
+      > div > div > span:has([id*=timestamp]) {
+        left: calc(100% - 8em) !important;
+      }
+
+      + li {
+        > div > div > span:has([id*=timestamp]) {
+          left: calc(100% - 8em) !important;
+        }
+
+        + li {
+          > div > div > span:has([id*=timestamp]) {
+            left: calc(100% - 8em) !important;
+          }
+
+          + li {
+            > div > div > span:has([id*=timestamp]) {
+              left: calc(100% - 8em) !important;
+            }
+
+            + li {
+              > div > div > span:has([id*=timestamp]) {
+                left: calc(100% - 8em) !important;
+              }
+
+              + li {
+                > div > div > span:has([id*=timestamp]), + li > div > div > span:has([id*=timestamp]) {
+                  left: calc(100% - 8em) !important;
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
 }
 
-#{$repeatedSelector} .header-2jRmjb:has([id*='-Uploader']) {
+/* Name Header when uploader */
+
+:is([class*=wrapper], [class*=cozy]):has([src*=$UserID]) .header-2jRmjb:has([id*="-Uploader"]) {
   text-align: right;
   margin-right: 3.1em;
 }
 
-#{$repeatedSelector} .attachment-1PZZB2 {
+/* Attachment uploader */
+
+.attachment-1PZZB2 {
   display: flex;
   margin-left: auto;
   margin-right: 3.1em;
 }
 
-#{$repeatedSelector} .message-2CShn3 {
+/* All Messages */
+
+.message-2CShn3 {
   padding-right: 72px !important;
 }
 
-#{$repeatedSelector} .repliedMessage-3Z6XBG::before {
-  border-right: var(--spine-width) solid var(--interactive-muted);
-  border-top-right-radius: 6px;
-  border-left: unset;
-  border-top-left-radius: unset;
-  right: calc(var(--avatar-size) / 2 * -1 + var(--gutter) * -1.4);
-  left: 101%;
-}
+/* repliedMessage indicator */
 
-#{$repeatedSelector} .repliedMessage-3Z6XBG {
+li:has([src*=$UserID]) .repliedMessage-3Z6XBG {
+  &::before {
+    border-right: var(--spine-width) solid var(--interactive-muted);
+    border-top-right-radius: 6px;
+    border-left: unset;
+    border-top-left-radius: unset;
+    right: calc(var(--avatar-size)/2*-1 + var(--gutter)*-1.4);
+    left: 101%;
+  }
+
   justify-content: flex-end;
-}
+} 
 
-#{$repeatedSelector} [class*=kQBbkU] img[src*='#{$UserID}'] {
+[class*=kQBbkU] img[src*=$UserID] {
   left: calc(100% - 3.7em);
 }
