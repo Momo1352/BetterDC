@@ -157,43 +157,6 @@
   animation-timing-function: ease;
   opacity: 0;
 }
-  
-.selected-1-Z6gm .layout-1qmrhw:has([fill="#f0b232"]),
-.clickable-28SzVr:hover .layout-1qmrhw:has([fill="#f0b232"]),
-.peopleListItem-u6dGxF:hover:has([fill="#f0b232"]),
-.interactiveSelected-29CP8y:has([fill="#f0b232"]),
-.interactive-26HRN_:hover:has([fill="#f0b232"]) {
-  background: #f0b13256;
-}
-.selected-1-Z6gm .layout-1qmrhw:has([fill="#23a55a"]),
-.clickable-28SzVr:hover .layout-1qmrhw:has([fill="#23a55a"]),
-.peopleListItem-u6dGxF:hover:has([fill="#23a55a"]),
-.interactiveSelected-29CP8y:has([fill="#23a55a"]),
-.interactive-26HRN_:hover:has([fill="#23a55a"]) {
-  background: #23a55a56;
-}
-.selected-1-Z6gm .layout-1qmrhw:has([fill="#f23f43"]),
-.clickable-28SzVr:hover .layout-1qmrhw:has([fill="#f23f43"]),
-.peopleListItem-u6dGxF:hover:has([fill="#f23f43"]),
-.interactiveSelected-29CP8y:has([fill="#f23f43"]),
-.interactive-26HRN_:hover:has([fill="#f23f43"]) {
-  background: #f23f4356;
-}
-.selected-1-Z6gm .layout-1qmrhw:has([fill="#80848e"]),
-.clickable-28SzVr:hover .layout-1qmrhw:has([fill="#80848e"]),
-.peopleListItem-u6dGxF:hover:has([fill="#80848e"]),
-.interactiveSelected-29CP8y:has([fill="#80848e"]),
-.interactive-26HRN_:hover:has([fill="#80848e"]) {
-  background: #80848e56;
-}
-.selected-1-Z6gm .layout-1qmrhw:has([fill="#593695"]),
-.clickable-28SzVr:hover .layout-1qmrhw:has([fill="#593695"]),
-.peopleListItem-u6dGxF:hover:has([fill="#593695"]),
-.interactiveSelected-29CP8y:has([fill="#593695"]),
-.interactive-26HRN_:hover:has([fill="#593695"]) {
-  background: #59369556;
-}
-
 
 @keyframes border-transition {
   0% {
