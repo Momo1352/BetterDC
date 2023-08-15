@@ -34,7 +34,7 @@
 .messageContainer-8dSNjf:not(:hover) .avatar-2e8lTP,
 .messageGroupWrapper-1jf_7C .messageGroupCozy-3v_RqN:not(:hover) .avatar-2e8lTP,
 .message-2CShn3:not(:hover) .avatar-2e8lTP {
-  transition: border-radius .25s ease;
+  transition: border-radius .35s ease;
   border-radius: 50%;
 }
 
@@ -153,7 +153,7 @@
 .container-YkUktl:hover  .avatar-1EWyVD rect,
 .message-2CShn3:hover .avatarDecoration-34OC0G {
   animation-name: Opacity;
-  animation-duration: .35s;
+  animation-duration: .15s;
   animation-timing-function: ease;
   opacity: 0;
 }
