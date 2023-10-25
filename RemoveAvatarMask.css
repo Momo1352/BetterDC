@@ -1,6 +1,6 @@
 /* Makes Avatars look cleaner on hover */
 
-.content-3u3YYB:has(.avatarWrapper-24Rbpj)::after {
+.content__1748b:has(.avatarWrapper__76c62)::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -8,49 +8,49 @@
   z-index: 99;
 }
 
-.avatarDecorationHint-3n-p6O {
+.avatarDecorationHint__03e0b {
   height: 80px;
   width: 80px;
   left: 0px;
   top: 0px;
 }
 
-.avatarWrapperNormal-ahVUaC:hover .avatarDecorationHint-3n-p6O,
-.avatarWrapperNormal-ahVUaC:hover .avatarHint-k7pYop,
-.avatarHintInner-2HUAWj {
+.avatarWrapperNormal__0bddb:hover .avatarDecorationHint__03e0b,
+.avatarWrapperNormal__0bddb:hover .avatarHint__8e5b9,
+.avatarHintInner__3d1c9 {
   border-radius: 26% !important;
   font-size: 9.6px;
   font-weight: 600;
 }
 
-.container-YkUktl .avatar-1EWyVD foreignObject, .wrapper-3Un6-K foreignObject,
-.wrapper-3Un6-K foreignObject ,
-.wrapper-3Un6-K rect,
-.avatar-9c8Ckk {
+.container_ca50b9 .avatar_f8541f foreignObject, .wrapper_edb6e0 foreignObject,
+.wrapper_edb6e0 foreignObject ,
+.wrapper_edb6e0 rect,
+.avatar_f52a16 {
   border-radius: 50%;
 } 
 
-.messageContainer-3VTXBC:not(:hover) .avatar-2e8lTP,
-.messageContainer-8dSNjf:not(:hover) .avatar-2e8lTP,
-.messageGroupWrapper-1jf_7C .messageGroupCozy-3v_RqN:not(:hover) .avatar-2e8lTP,
-.message-2CShn3:not(:hover) .avatar-2e8lTP {
+.messageContainer_aa7d14:not(:hover) .avatar__08316,
+.messageContainer__95a1c:not(:hover) .avatar__08316,
+.messageGroupWrapper_f8c6e9 .messageGroupCozy__2dedd:not(:hover) .avatar__08316,
+.message__80c10:not(:hover) .avatar__08316 {
   transition: border-radius .35s ease;
   border-radius: 50%;
 }
 
-.interactiveSelected-29CP8y rect,
-.interactiveSelected-29CP8y .mask-1y0tyc.svg-1G_H_8 foreignObject,
-.selected-1-Z6gm .avatar-6qzftW foreignObject {
+.interactiveSelected_ec846b rect,
+.interactiveSelected_ec846b .mask__1979f.svg_f5b652 foreignObject,
+.selected__9800b .avatar__6337f foreignObject {
   mask: none;
   fill: transparent;
   border-radius: 26%;
 }
 
 
-.userProfileModalInner-3dx9L9:hover .avatar-3QF_VA,
-.userPopoutInner-nv9Y92:hover .avatarWrapper-eenWra,
-.userPopoutInner-nv9Y92:hover .imageUploaderIconWrapper-14sdnH,
-.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ {
+.userProfileModalInner__7c87d:hover .avatar-3QF_VA,
+.userPopoutInner_f545a3:hover .avatarWrapper_f77579,
+.userPopoutInner_f545a3:hover .imageUploaderIconWrapper__4efff,
+.accountProfileCard__22589:has(.avatar__6c108):hover .avatar__6c108 {
   transition: .35s ease;
   background-color: transparent;
   box-shadow: none;
@@ -58,47 +58,47 @@
 
 
 
-.row-7jGzPR:hover .avatar-9c8Ckk,
-.messageContainer-3VTXBC:hover .avatar-2e8lTP,
-.messageContainer-8dSNjf:hover .avatar-2e8lTP,
+.row_fd1939:hover .avatar_f52a16,
+.messageContainer_aa7d14:hover .avatar__08316,
+.messageContainer__95a1c:hover .avatar__08316,
 
-.container-YkUktl:hover .avatarSpeaking-36V2PN,
+.container_ca50b9:hover .avatarSpeaking__61fb1,
 
-.message-24k8JL:hover .avatar-2e8lTP,
-.message-2CShn3:hover .avatar-2e8lTP,
+.message_d8db25:hover .avatar__08316,
+.message__80c10:hover .avatar__08316,
 
-.messageGroupWrapper-1jf_7C .messageGroupCozy-3v_RqN:hover .avatar-2e8lTP {
+.messageGroupWrapper_f8c6e9 .messageGroupCozy__2dedd:hover .avatar__08316 {
   transition: .35s ease;
   border-radius: 26%;
 }
 
 
-.row-7jGzPR:hover .svg-lIB-lq.mask-1TJ4vP foreignObject,
-.content-3u3YYB:hover .mask-1y0tyc.svg-1G_H_8 foreignObject,
+.row_fd1939:hover .svg__7900e.mask_a76362 foreignObject,
+.content__1748b:hover .mask__1979f.svg_f5b652 foreignObject,
 
-.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .bannerSVGWrapper-2CLfzN foreignObject,
-.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ foreignObject,
+.accountProfileCard__22589:has(.avatar__6c108):hover .bannerSVGWrapper__3e7b0 foreignObject,
+.accountProfileCard__22589:has(.avatar__6c108):hover .avatar__6c108 foreignObject,
 
-.userPopoutInner-nv9Y92:hover .avatar-3mTjvZ foreignObject,
-.userPopoutInner-nv9Y92:hover .avatarUploaderInner-p38nm2,
+.userPopoutInner_f545a3:hover .avatar__6c108 foreignObject,
+.userPopoutInner_f545a3:hover .avatarUploaderInner_c81617,
 
-.avatarDecorationHint-3n-p6O foreignObject,
-.selected-1-Z6gm .avatar-6qzftW rect,
-.svg-lIB-lq.avatarHint-k7pYop foreignObject,
-.container-YkUktl:hover  .avatar-1EWyVD foreignObject,
-.clickable-28SzVr:hover .wrapper-3Un6-K foreignObject,
-.userProfileInner-1ngKnf:hover .bannerSVGWrapper-2CLfzN foreignObject,
-.interactive-26HRN_:hover .wrapper-3Un6-K foreignObject,
-.peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .mask-1y0tyc.svg-1G_H_8 foreignObject,
-.outer-2JOHae.interactive-2zD88a:hover .mask-1y0tyc.svg-1G_H_8 foreignObject {
+.avatarDecorationHint__03e0b foreignObject,
+.selected__9800b .avatar__6337f rect,
+.svg__7900e.avatarHint__8e5b9 foreignObject,
+.container_ca50b9:hover  .avatar_f8541f foreignObject,
+.clickable__17ccb:hover .wrapper_edb6e0 foreignObject,
+.userProfileInner__8065b:hover .bannerSVGWrapper__3e7b0 foreignObject,
+.interactive__776ee:hover .wrapper_edb6e0 foreignObject,
+.peopleListItem_d14722.active__6b8ff, .peopleListItem_d14722:hover .mask__1979f.svg_f5b652 foreignObject,
+.outer_a41cf3.interactive__01cfa:hover .mask__1979f.svg_f5b652 foreignObject {
   transition: .35s ease;
   border-radius: 26%;
   mask: none;
 } 
 
   
-.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL foreignObject,
-.userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA foreignObject {
+.userPopoutInner_f545a3:hover .avatarHoverTarget__3a360 foreignObject,
+.userProfileModalInner__7c87d:hover .wrapper_edb6e0.avatar-3QF_VA foreignObject {
   mask: none;
   border-radius: 26%;
   animation-name: border-transition;
@@ -107,50 +107,50 @@
 }
 
 
-.avatarHintInner-2HUAWj circle,
+.avatarHintInner__3d1c9 circle,
 
-.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL circle,
-.userPopoutInner-nv9Y92:hover .bannerSVGWrapper-2CLfzN circle,
-.userPopoutInner-nv9Y92:hover .avatarHoverTarget-1zzfRL rect,
-.userPopoutInner-nv9Y92:hover .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"],
+.userPopoutInner_f545a3:hover .avatarHoverTarget__3a360 circle,
+.userPopoutInner_f545a3:hover .bannerSVGWrapper__3e7b0 circle,
+.userPopoutInner_f545a3:hover .avatarHoverTarget__3a360 rect,
+.userPopoutInner_f545a3:hover .mask__1979f.svg_f5b652 rect[style="opacity: 0.45;"],
 
-.userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA circle, 
-.userProfileModalInner-3dx9L9:hover .mask-1y0tyc.svg-1G_H_8 rect[style="opacity: 0.45;"]  {
+.userProfileModalInner__7c87d:hover .wrapper_edb6e0.avatar-3QF_VA circle, 
+.userProfileModalInner__7c87d:hover .mask__1979f.svg_f5b652 rect[style="opacity: 0.45;"]  {
   transition: .35s ease;
   fill: transparent;
 }
 
-.userProfileInnerThemedPremiumWithoutBanner-lZ9inp:hover .avatarDecoration-2Wb1Au,
+.userProfileInnerThemedPremiumWithoutBanner__703b1:hover .avatarDecoration_ae35e3,
 
-.messageContainer-8dSNjf:hover .avatarDecoration-34OC0G,
-.messageContainer-3VTXBC:hover .avatarDecoration-34OC0G, 
+.messageContainer__95a1c:hover .avatarDecoration__14b3c,
+.messageContainer_aa7d14:hover .avatarDecoration__14b3c, 
 
-.row-7jGzPR:hover .maskIcon-9WiX-d,
-.row-7jGzPR:hover .maskBackground-3UP7z9, 
+.row_fd1939:hover .maskIcon__52bbc,
+.row_fd1939:hover .maskBackground__23cef, 
 
-.accountProfileCard-lbN7n-:has(.avatar-3mTjvZ):hover .avatar-3mTjvZ rect,
-.userPopoutInner-nv9Y92:hover .status-170GHg, .statusDotBackground-16Gr51 rect,
-.userPopoutInner-nv9Y92:hover .imageUploaderIcon-2OHmFu,
+.accountProfileCard__22589:has(.avatar__6c108):hover .avatar__6c108 rect,
+.userPopoutInner_f545a3:hover .status_be3f03, .statusDotBackground__56e10 rect,
+.userPopoutInner_f545a3:hover .imageUploaderIcon__0c13b,
 
-.interactive-26HRN_:hover .wrapper-3Un6-K rect,
-.peopleListItem-u6dGxF.active-2UF8Zh, .peopleListItem-u6dGxF:hover .wrapper-3Un6-K rect,
-.outer-2JOHae.interactive-2zD88a:hover .wrapper-3Un6-K rect,
+.interactive__776ee:hover .wrapper_edb6e0 rect,
+.peopleListItem_d14722.active__6b8ff, .peopleListItem_d14722:hover .wrapper_edb6e0 rect,
+.outer_a41cf3.interactive__01cfa:hover .wrapper_edb6e0 rect,
 
-.userProfileModalInner-3dx9L9:hover .bannerSVGWrapper-2CLfzN circle,
-.userProfileInnerThemedWithBanner-25XGmz:hover .avatarDecoration-2Wb1Au,
-.userPopoutInner-nv9Y92:hover .avatarDecoration-2Wb1Au,
+.userProfileModalInner__7c87d:hover .bannerSVGWrapper__3e7b0 circle,
+.userProfileInnerThemedWithBanner_d5f991:hover .avatarDecoration_ae35e3,
+.userPopoutInner_f545a3:hover .avatarDecoration_ae35e3,
 
-.clickable-28SzVr:hover .wrapper-3Un6-K rect,
-.clickable-28SzVr:hover .avatarDecoration-2Wb1Au,
+.clickable__17ccb:hover .wrapper_edb6e0 rect,
+.clickable__17ccb:hover .avatarDecoration_ae35e3,
 
-.selected-1-Z6gm .avatar-6qzftW rect,
-.selected-1-Z6gm .avatarDecoration-2Wb1Au,
+.selected__9800b .avatar__6337f rect,
+.selected__9800b .avatarDecoration_ae35e3,
 
 
-.avatarHoverTarget-1zzfRL:hover rect,
-.userProfileModalInner-3dx9L9:hover .wrapper-3Un6-K.avatar-3QF_VA rect,
-.container-YkUktl:hover  .avatar-1EWyVD rect,
-.message-2CShn3:hover .avatarDecoration-34OC0G {
+.avatarHoverTarget__3a360:hover rect,
+.userProfileModalInner__7c87d:hover .wrapper_edb6e0.avatar-3QF_VA rect,
+.container_ca50b9:hover  .avatar_f8541f rect,
+.message__80c10:hover .avatarDecoration__14b3c {
   animation-name: Opacity;
   animation-duration: .15s;
   animation-timing-function: ease;
