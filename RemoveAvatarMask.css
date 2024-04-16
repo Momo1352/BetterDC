@@ -1,15 +1,15 @@
 /* Makes Avatars look cleaner on hover */
-.userProfileModalInner__99b1e:hover .mask_d5067d.svg_a6bf1c>circle {
+.userProfileModalInner__84e47:hover .mask_d5067d.svg_a6bf1c>circle {
 	fill: none;
 	transition: .35s ease;
   }
 
-  .userProfileModalInner__99b1e:hover .mask_d5067d>rect {
+  .userProfileModalInner__84e47:hover .mask_d5067d>rect {
 	opacity: 0;
 	transition: .25s ease;
   }
 
-.userProfileModalInner__99b1e:hover .mask_d5067d>foreignObject {
+.userProfileModalInner__84e47:hover .mask_d5067d>foreignObject {
 	mask: none;
 	border-radius: 26%;
 	transition: .35s ease;
@@ -61,9 +61,9 @@
 	border-radius: 26%;
   }
   
-  .userProfileModalInner__99b1e:hover .avatar-3QF_VA,
-  .userPopoutInner_e90432:hover .avatarWrapper__0cd44,
-  .userPopoutInner_e90432:hover .imageUploaderIconWrapper__3d11a,
+  .userProfileModalInner__84e47:hover .avatar-3QF_VA,
+  .userPopoutInner_ac0960:hover .avatarWrapper__0cd44,
+  .userPopoutInner_ac0960:hover .imageUploaderIconWrapper__3d11a,
   .accountProfileCard__744d8:has(.avatar__6c108):hover .avatar__6c108 {
 	transition: .35s ease;
 	background-color: transparent;
@@ -93,15 +93,15 @@
   .accountProfileCard__744d8:has(.avatar__6c108):hover .bannerSVGWrapper__8a38c foreignObject,
   .accountProfileCard__744d8:has(.avatar__6c108):hover .avatar__6c108 foreignObject,
   
-  .userPopoutInner_e90432:hover .avatar__6c108 foreignObject,
-  .userPopoutInner_e90432:hover .avatarUploaderInner__71578,
+  .userPopoutInner_ac0960:hover .avatar__6c108 foreignObject,
+  .userPopoutInner_ac0960:hover .avatarUploaderInner__71578,
   
   .avatarDecorationHint__04b99 foreignObject,
   .selected__7f4cb .avatar__6337f rect,
   .svg_bb7847.avatarHint__15059 foreignObject,
   .container_debb33:hover  .avatar_f8541f foreignObject,
   .clickable__03a29:hover .wrapper__3ed10 foreignObject,
-  .userProfileInner__61cc1:hover .bannerSVGWrapper__8a38c foreignObject,
+  .userProfileInner__8ff35:hover .bannerSVGWrapper__8a38c foreignObject,
   .interactive__0786a:hover .wrapper__3ed10 foreignObject,
   .peopleListItem_dab480.active__6b8ff, .peopleListItem_dab480:hover .mask_d5067d.svg_a6bf1c foreignObject,
   .outer_a41cf3.interactive__46c44:hover .mask_d5067d.svg_a6bf1c foreignObject {
@@ -111,8 +111,8 @@
   } 
   
 	
-  .userPopoutInner_e90432:hover .avatarHoverTarget__9b4a9 foreignObject,
-  .userProfileModalInner__99b1e:hover .wrapper__3ed10.avatar-3QF_VA foreignObject {
+  .userPopoutInner_ac0960:hover .avatarHoverTarget__9b4a9 foreignObject,
+  .userProfileModalInner__84e47:hover .wrapper__3ed10.avatar-3QF_VA foreignObject {
 	mask: none;
 	border-radius: 26%;
 	animation-name: border-transition;
@@ -124,18 +124,18 @@
   
   .avatarHintInner_c8ddb1 circle,
   
-  .userPopoutInner_e90432:hover .avatarHoverTarget__9b4a9 circle,
-  .userPopoutInner_e90432:hover .bannerSVGWrapper__8a38c circle,
-  .userPopoutInner_e90432:hover .avatarHoverTarget__9b4a9 rect,
-  .userPopoutInner_e90432:hover .mask_d5067d.svg_a6bf1c rect[style="opacity: 0.45;"],
+  .userPopoutInner_ac0960:hover .avatarHoverTarget__9b4a9 circle,
+  .userPopoutInner_ac0960:hover .bannerSVGWrapper__8a38c circle,
+  .userPopoutInner_ac0960:hover .avatarHoverTarget__9b4a9 rect,
+  .userPopoutInner_ac0960:hover .mask_d5067d.svg_a6bf1c rect[style="opacity: 0.45;"],
   
-  .userProfileModalInner__99b1e:hover .wrapper__3ed10.avatar-3QF_VA circle, 
-  .userProfileModalInner__99b1e:hover .mask_d5067d.svg_a6bf1c rect[style="opacity: 0.45;"]  {
+  .userProfileModalInner__84e47:hover .wrapper__3ed10.avatar-3QF_VA circle, 
+  .userProfileModalInner__84e47:hover .mask_d5067d.svg_a6bf1c rect[style="opacity: 0.45;"]  {
 	transition: .35s ease;
 	fill: transparent;
   }
   
-  .userProfileInnerThemedPremiumWithoutBanner__3705a:hover .avatarDecoration_cf681a,
+  .userProfileInnerThemedPremiumWithoutBanner_ee8277:hover .avatarDecoration_cf681a,
   
   .messageContainer__3e208:hover .avatarDecoration__8a0c2,
   .messageContainer_cb3d47:hover .avatarDecoration__8a0c2, 
@@ -144,16 +144,16 @@
   .row_e9c6f6:hover .maskBackground_d1b3ad, 
   
   .accountProfileCard__744d8:has(.avatar__6c108):hover .avatar__6c108 rect,
-  .userPopoutInner_e90432:hover .status_be3f03, .statusDotBackground_baf09f rect,
-  .userPopoutInner_e90432:hover .imageUploaderIcon__4b7d2,
+  .userPopoutInner_ac0960:hover .status_be3f03, .statusDotBackground_baf09f rect,
+  .userPopoutInner_ac0960:hover .imageUploaderIcon__4b7d2,
   
   .interactive__0786a:hover .wrapper__3ed10 rect,
   .peopleListItem_dab480.active__6b8ff, .peopleListItem_dab480:hover .wrapper__3ed10 rect,
   .outer_a41cf3.interactive__46c44:hover .wrapper__3ed10 rect,
   
-  .userProfileModalInner__99b1e:hover .bannerSVGWrapper__8a38c circle,
-  .userProfileInnerThemedWithBanner__2152d:hover .avatarDecoration_cf681a,
-  .userPopoutInner_e90432:hover .avatarDecoration_cf681a,
+  .userProfileModalInner__84e47:hover .bannerSVGWrapper__8a38c circle,
+  .userProfileInnerThemedWithBanner_e9e7c5:hover .avatarDecoration_cf681a,
+  .userPopoutInner_ac0960:hover .avatarDecoration_cf681a,
   
   .clickable__03a29:hover .wrapper__3ed10 rect,
   .clickable__03a29:hover .avatarDecoration_cf681a,
@@ -163,7 +163,7 @@
   
   
   .avatarHoverTarget__9b4a9:hover rect,
-  .userProfileModalInner__99b1e:hover .wrapper__3ed10.avatar-3QF_VA rect,
+  .userProfileModalInner__84e47:hover .wrapper__3ed10.avatar-3QF_VA rect,
   .container_debb33:hover  .avatar_f8541f rect,
   .message_ccca67:hover .avatarDecoration__8a0c2 {
 	animation-name: Opacity;
