@@ -1,0 +1,175 @@
+/* Own Messages to the right */
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa,
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea))
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    :where(.groupStart_d5deea.cozyMessage_d5deea>.contents_ec86aa, 
+    .cozyMessage_d5deea:not(.groupStart_d5deea)>.contents_ec86aa>.markup_d6076c:not(:empty, .searchResultsWrap_c2b47d *),
+     code, span, [id*=timestamp], [class*=Grid], [class*=embed], [class*=Attachment], [class*=Media], [class*=zalgo], [class*=reaction])
+    {margin-left: auto !important}
+    
+    
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea))> div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea))
+    + li:not(:has(.groupStart_d5deea))> div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea))> div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) > div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea))> div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) > div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) > div > div > span:has([id*=timestamp]),
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"]))
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) 
+    + li:not(:has(.groupStart_d5deea)) > div > div > span:has([id*=timestamp])
+    {left: calc(100% - 8em) !important;} 
+    
+ 
+   
+    /* Name Header when uploader */
+    :is([class*=wrapper], [class*=cozy]):has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) .header_ec86aa:has([id*="-Uploader" ]) {
+      text-align: right;
+      margin-right: 3.1em;
+    }
+    
+    /* Attachment uploader */
+    .attachment_a4623d {
+      display: flex;
+      margin-left: auto;
+      margin-right: 3.1em;
+    }
+    
+    /* All Messages */
+    .message_d5deea {
+      padding-right: 72px !important;
+    }
+    
+    /* repliedMessage indicator */
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) .repliedMessage_ec86aa::before {
+      border-right: var(--spine-width) solid var(--interactive-muted);
+      border-top-right-radius: 6px;
+      border-left: unset;
+      border-top-left-radius: unset;
+      right: calc(var(--avatar-size)/2*-1 + var(--gutter)*-1.4);
+      left: 101%
+    } 
+    
+    /* Replyed Message (Avatar, Name, Text */
+    li:has([src*="416353640073134082"]):not(:has([class*=replyAvatar][src*="416353640073134082"])) .repliedMessage_ec86aa {
+      justify-content: flex-end;
+    } 
+    
+    /* Avatar in Search */
+    .searchResultsWrap_c2b47d:has([src*="416353640073134082"]) img {
+      left: calc(4%) !important;
+    }
+    /* Avatar */
+    [class] img[src*="416353640073134082"]{
+      left: calc(100% - 3.7em);
+    } 
+    
