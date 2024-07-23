@@ -45,10 +45,10 @@
 	border-radius: 50%;
   } 
   
-  .messageContainer_ddb5b4:not(:hover) .avatar_ec86aa,
-  .messageContainer_c06487:not(:hover) .avatar_ec86aa,
-  .messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2:not(:hover) .avatar_ec86aa,
-  .message_d5deea:not(:hover) .avatar_ec86aa {
+  .messageContainer_ddb5b4:not(:hover) .avatar_f9f2ca,
+  .messageContainer_c06487:not(:hover) .avatar_f9f2ca,
+  .messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2:not(:hover) .avatar_f9f2ca,
+  .message_d5deea:not(:hover) .avatar_f9f2ca {
 	transition: border-radius .35s ease;
 	border-radius: 50%;
   }
@@ -73,15 +73,15 @@
   
   
   .row_fd8ff1:hover .avatar_f52a16,
-  .messageContainer_ddb5b4:hover .avatar_ec86aa,
-  .messageContainer_c06487:hover .avatar_ec86aa,
+  .messageContainer_ddb5b4:hover .avatar_f9f2ca,
+  .messageContainer_c06487:hover .avatar_f9f2ca,
   
   .container_b2ca13:hover .avatarSpeaking_c51b4e,
   
-  .message_ddc613:hover .avatar_ec86aa,
-  .message_d5deea:hover .avatar_ec86aa,
+  .message_ddc613:hover .avatar_f9f2ca,
+  .message_d5deea:hover .avatar_f9f2ca,
   
-  .messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2:hover .avatar_ec86aa {
+  .messageGroupWrapper_ac90a2 .messageGroupCozy_ac90a2:hover .avatar_f9f2ca {
 	transition: .35s ease;
 	border-radius: 26%;
   }
@@ -137,8 +137,8 @@
   
   .userProfileInnerThemedPremiumWithoutBanner_c69a7b:hover .avatarDecoration_c51b4e,
   
-  .messageContainer_c06487:hover .avatarDecoration_ec86aa,
-  .messageContainer_ddb5b4:hover .avatarDecoration_ec86aa, 
+  .messageContainer_c06487:hover .avatarDecoration_f9f2ca,
+  .messageContainer_ddb5b4:hover .avatarDecoration_f9f2ca, 
   
   .row_fd8ff1:hover .maskIcon_f9bbb4,
   .row_fd8ff1:hover .maskBackground_f9bbb4, 
@@ -165,7 +165,7 @@
   .avatarHoverTarget_f89da9:hover rect,
   .userProfileModalInner_c69a7b:hover .wrapper_c51b4e.avatar-3QF_VA rect,
   .container_b2ca13:hover  .avatar_b2ca13 rect,
-  .message_d5deea:hover .avatarDecoration_ec86aa {
+  .message_d5deea:hover .avatarDecoration_f9f2ca {
 	animation-name: Opacity;
 	animation-duration: .15s;
 	animation-timing-function: ease;
