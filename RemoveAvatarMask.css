@@ -15,7 +15,7 @@
 	transition: .35s ease;
   }
 
-.content_ba4b17:has(.avatarWrapper_f3801e)::after {
+.content_ba4b17:has(.avatarWrapper_cff728)::after {
 	content: "";
 	position: absolute;
 	height: 100%;
@@ -55,7 +55,7 @@
   
   .interactiveSelected_c91bad rect
   .interactiveSelected_c91bad .mask_c51b4e.svg_c51b4e foreignObject,
-  .selected_e9f61e .avatar_e9f61e foreignObject {
+  .selected_d808b0 .avatar_d808b0 foreignObject {
 	mask: none;
 	fill: transparent;
 	border-radius: 26%;
@@ -97,14 +97,14 @@
   .userPopoutInner_c69a7b:hover .avatarUploaderInner_ab876d,
   
   .avatarDecorationHint_f89da9 foreignObject,
-  .selected_e9f61e .avatar_e9f61e rect,
+  .selected_d808b0 .avatar_d808b0 rect,
   .svg_d48241.avatarHint_f89da9 foreignObject,
   .container_b2ca13:hover  .avatar_b2ca13 foreignObject,
-  .clickable_e9f61e:hover .wrapper_c51b4e foreignObject,
+  .clickable_d808b0:hover .wrapper_c51b4e foreignObject,
   .userProfileInner_c69a7b:hover .bannerSVGWrapper_b32cc2 foreignObject,
   .interactive_f5eb4b:hover .wrapper_c51b4e foreignObject,
   .peopleListItem_d51464.active_d51464, .peopleListItem_d51464:hover .mask_c51b4e.svg_c51b4e foreignObject,
-  .outer_c0f6a6.interactive_c0f6a6:hover .mask_c51b4e.svg_c51b4e foreignObject {
+  .outer_ac5d22.interactive_ac5d22:hover .mask_c51b4e.svg_c51b4e foreignObject {
 	transition: .35s ease;
 	border-radius: 26%;
 	mask: none;
@@ -149,17 +149,17 @@
   
   .interactive_f5eb4b:hover .wrapper_c51b4e rect,
   .peopleListItem_d51464.active_d51464, .peopleListItem_d51464:hover .wrapper_c51b4e rect,
-  .outer_c0f6a6.interactive_c0f6a6:hover .wrapper_c51b4e rect,
+  .outer_ac5d22.interactive_ac5d22:hover .wrapper_c51b4e rect,
   
   .userProfileModalInner_c69a7b:hover .bannerSVGWrapper_b32cc2 circle,
   .userProfileInnerThemedWithBanner_c69a7b:hover .avatarDecoration_c51b4e,
   .userPopoutInner_c69a7b:hover .avatarDecoration_c51b4e,
   
-  .clickable_e9f61e:hover .wrapper_c51b4e rect,
-  .clickable_e9f61e:hover .avatarDecoration_c51b4e,
+  .clickable_d808b0:hover .wrapper_c51b4e rect,
+  .clickable_d808b0:hover .avatarDecoration_c51b4e,
   
-  .selected_e9f61e .avatar_e9f61e rect,
-  .selected_e9f61e .avatarDecoration_c51b4e,
+  .selected_d808b0 .avatar_d808b0 rect,
+  .selected_d808b0 .avatarDecoration_c51b4e,
   
   
   .avatarHoverTarget_f89da9:hover rect,
